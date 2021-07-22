@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Login from './pages/login/Login';
 import reportWebVitals from './reportWebVitals';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Login />
   </React.StrictMode>,
   document.getElementById('root')
 );
