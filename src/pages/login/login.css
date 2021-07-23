@@ -1,51 +1,83 @@
 .body {
 
-    background-image: url(../../img/fondolog.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     max-width: 1200px;
     width: 100%;
     min-height: 100vh;
+    padding: 10px 0px 0px 0px;
+
 }
+.fondo{
+    background-image: url(../../img/fondobirretes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
 
 .box {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin:30px auto;
-    max-width: 400px;
+    margin:70px auto;
+    max-width: 600px;
     width: 100%;
-    min-height: 200px;
+    min-height: 250px;
     padding: 20px;
     background: #FFFFFF;
     text-align: center;
     transition: 0.25s;
     border-radius: 5px;
     border: 1px solid #77787B;
+    z-index: 1;
 }
+
+
 .logokuepa{
     text-align: left;
-    margin-top: 10px;
+    margin: 10px 0px 0px 40px;
+  
+
 }
 
 .logotitulando{
     margin-top: 30px;
     text-align: center;
+   
 }
+
 
 #usuario, #clave{
     border: 1px solid #B5B4B4;
     font-size: 14px;
-    width: 60%;
-    min-height: 35px;
+    width: 70%;
+    min-height: 45px;
     height: 100%;
-    border-radius: 5px;
+   
+}
+.cajainput{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.icon{
+    font-size: 30px;
+    padding-top: 7px;
+}
+
+.cajaicon{
+    border: 1px solid #B5B4B4;
+    width: 35px;
+    height: 35px;
 }
 
 
 .card{
     border: none;
 }
+
 
 .tituloingresar{
     font-weight: 600;
@@ -62,6 +94,7 @@
     color: #ffffff;
     font-weight: 500;
 }
+
 
 .btn-inicio:hover{
     font-size: 12px;
