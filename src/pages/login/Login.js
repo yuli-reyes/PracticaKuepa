@@ -1,11 +1,8 @@
 import './login.css';
 import logokuepa from '../../img/logokuepa.png';
-import user from '../../img/user.svg';
 import logotitulando from '../../img/logotitulando.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons'
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons';
 
 function Login(){
   return(
@@ -34,11 +31,12 @@ function Login(){
                       <div className="mt-4">
                         <button className="btn-inicio">INICIAR SESIÓN</button>
                       </div>
-                  </form>
+                  </form>                   
               </div>
             </div>
       </div>
-    </div> 
+     </div>
+
     );
 }
 

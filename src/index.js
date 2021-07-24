@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Login from './pages/login/Login';
 import reportWebVitals from './reportWebVitals';
-import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import Footer from './components/footer/Footer';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+  <div>
+      <Login />
+      <Footer />
+  </div>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
