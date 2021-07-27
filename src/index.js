@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Login from './pages/login/Login';
+/*import Login from './pages/login/Login';*/
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Dashboard from './components/dashboard/Dashboard';
 
 
 ReactDOM.render(
   <React.StrictMode>
   <div>
-      <Login />
+      <Header />
+      <Dashboard />
       <Footer />
   </div>
 
