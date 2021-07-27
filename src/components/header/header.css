@@ -1,0 +1,42 @@
+.header{
+
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.logokuepa{
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+    padding-left: 40px;
+}
+
+.logotitulando{
+    margin-top: 30px;
+    text-align: center;
+   
+}
+
+.iconcircle{
+	margin-top:20px;
+	font-size: 35px;
+	padding: 0px;
+	text-align: center;
+}
+
+.iconexit{
+	margin: 0px;
+	margin-top:20px;
+	font-size: 30px;
+	padding: 0px;
+	color: #F86433;
+	text-align: center;
+}
+
+.iconexit a{
+	padding-left: 2px;
+	font-size:21px;
+	text-decoration: none;
+	color: #F86433;
+	font-weight: 700;
+	margin-left: 8px;
+}
