@@ -2,7 +2,7 @@ import './login.css';
 import logokuepa from '../../img/logokuepa.png';
 import logotitulando from '../../img/logotitulando.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons';
+import { faUserGraduate,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons';
 
 function Login(){
   return(
@@ -10,7 +10,7 @@ function Login(){
     <div className="fondo">      
       <div className="container-fluid body">
         <div className="logokuepa">
-          <img src={logokuepa} width="130px" />
+          <img src={logokuepa} width="130px" />                    
         </div>
           <div className="logotitulando">
             <img src={logotitulando} width="250px"/>
@@ -21,7 +21,7 @@ function Login(){
                     <h2 className="tituloingresar">INGRESAR</h2>
 
                       <div className="input-group mb-3 mt-4 cajainput text-center">
-                        <span className="input-group-text"><FontAwesomeIcon icon={faUser} className="icon"/></span>
+                        <span className="input-group-text"><FontAwesomeIcon icon={faUserGraduate} className="icon"/></span>
                         <input type="text" id="usuario" placeholder=" Usuario" />
                       </div> 
                       <div className="input-group mb-3 cajainput ">
