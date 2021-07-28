@@ -7,13 +7,18 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Dashboard from './components/dashboard/Dashboard';
+import Navegre from './components/navegre/Navegre';
+import Buscador from './components/buscador/Buscador';
+import Cardegre from './components/cardegresados/Cardegresados';
 
 
 ReactDOM.render(
   <React.StrictMode>
   <div>
       <Header />
-      <Dashboard />
+      <Navegre/>
+      <Buscador/>
+      <Cardegre/>
       <Footer />
   </div>
 
