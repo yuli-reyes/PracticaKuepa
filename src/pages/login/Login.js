@@ -3,6 +3,7 @@ import logokuepa from '../../img/logokuepa.png';
 import logotitulando from '../../img/logotitulando.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGraduate,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons';
+import Botonlogin from '../../components/botonlogin/Botonlogin';
 
 function Login(){
   return(
@@ -29,7 +30,7 @@ function Login(){
                         <input type="text" id="clave" placeholder=" Contraseña" />
                       </div>                                
                       <div className="mt-4">
-                        <button className="btn-inicio">INICIAR SESIÓN</button>
+                       <Botonlogin/>
                       </div>
                   </form>                   
               </div>

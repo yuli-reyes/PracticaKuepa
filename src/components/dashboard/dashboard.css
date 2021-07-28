@@ -10,10 +10,10 @@
 
 .cajanaranja p{
 	text-align: center;
-	padding: 200px 50px 200px 50px;
-	font-size: 30px;
+	padding: 100px 50px 100px 50px;
+	font-size: 20px;
 	background-color: rgba(248, 100, 51, 0.7);
-	min-height: 600px;
+	max-height: 400px;
 	color: #ffffff;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -21,10 +21,10 @@
 
 .cajaazul p{
 	text-align: center;
-	padding: 200px 50px 200px 50px;
-	font-size: 30px;
+	padding: 100px 50px 100px 50px;
+	font-size: 20px;
 	background-color: rgba(48, 162, 150, 0.7);
-	min-height: 600px;
+	max-height: 400px;
 	color: #ffffff;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -33,31 +33,31 @@
 .seccion1{
 	background-image:url(./egresados.jpg);
 	background-size: cover;
-	min-height: 600px;
+	max-height: 400px;
 }
 
 .seccion2{
 	background-image:url(./seguimiento.jpg);
 	background-size: cover;	
-	min-height: 600px;
+	max-height: 400px;
 }
 
 .btn-egresado{
 	width: 100%;
-	max-height: 80px;
+	max-height: 70px;
 	height: 100%;
 	background-color: #F86433;
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 700;
 	color: #ffffff;
 }
 
 .btn-seguimiento{
 	width: 100%;
-	max-height: 80px;
+	max-height: 70px;
 	height: 100%;
 	background-color: #30A296;
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 700;
 	color: #ffffff;
 }
