@@ -1,0 +1,25 @@
+.boton{
+	padding: 10px 50px;
+	margin: 0px 10px;
+	background-color: #F86433;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 18px;
+	
+
+}
+.boton:hover{
+	background-color: #FFFFFF;
+	border: 1px solid #F86433;
+	color: #F86433;
+
+}
+
+.icono{
+	font-size: 20px;
+}
+.foto{
+	border-radius: 10px;
+	padding-top: 20px;
+}
