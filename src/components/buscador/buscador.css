@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.select input {
+  font-family: "Montserrat";
+}
+
+.filtro{
+	min-width: 80px;
+	width: 100%;
+
+	
+}
+.btn-buscar{
+	background-color: #30A296;
+	padding: 6px 12px;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+.selectfiltro{
+	max-width: 400px;
+	width: 100%;
+	margin: auto;
+	
+}
+
+.buscar{
+	max-width: 400px;
+	width: 100%;
+	margin: auto;
+}
+
