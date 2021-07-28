@@ -12,13 +12,12 @@ import Buscador from './components/buscador/Buscador';
 import Cardegre from './components/cardegresados/Cardegresados';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
   <div>
-      <Header />
-      <Navegre/>
-      <Buscador/>
-      <Cardegre/>
+      <Header/>
+      <Dashboard/>
       <Footer />
   </div>
 

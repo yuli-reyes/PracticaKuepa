@@ -82,20 +82,3 @@
 
 }
 
-.btn-inicio{
-    font-size: 12px;
-    background-color: #30A296;
-    padding: 8px;
-    border-radius: 5px;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-
-.btn-inicio:hover{
-    font-size: 12px;
-    color: #30A296;
-    background-color: #FFFFFF;
-    border:2px solid #30A296;
-    padding: 6px;
-}
