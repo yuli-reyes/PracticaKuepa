@@ -1,0 +1,45 @@
+{
+"egresados":[
+		{
+			"id": 1,		
+			"nombre":"Edwin Alexander Gutierrez Díaz",
+			"img":"foto",
+			"documento":"1234567890",
+			"direccionderesidencia":"calle 40 # 20-35",
+			"numerofijo":"234789",
+			"celular":"312 4567345",
+			"correo":"ejemplo@gmail.com",
+			"programadeformacion":"Diseño Front-End",
+			"institucion":"Edu-Tech Kuepa",
+			"fechadegraduacion":"13-agosto-2021",
+			"otrosintereses":"",
+		},
+		{
+			"id": 2,
+			"nombre":"Edwin Alexander Gutierrez Díaz",
+			"documento":"1234567890",
+			"direccionderesidencia":"calle 40 # 20-35",
+			"numerofijo":"234789",
+			"celular":"312 4567345",
+			"correo":"ejemplo@gmail.com",
+			"programadeformacion":"Diseño Front-End",
+			"institucion":"Edu-Tech Kuepa",
+			"fechadegraduacion":"13-agosto-2021",
+			"otrosintereses":"",
+		},
+		{
+			"id": 3,
+			"nombre":"Edwin Alexander Gutierrez Díaz",
+			"documento":"1234567890",
+			"direccionderesidencia":"calle 40 # 20-35",
+			"numerofijo":"234789",
+			"celular":"312 4567345",
+			"correo":"ejemplo@gmail.com",
+			"programadeformacion":"Diseño Front-End",
+			"institucion":"Edu-Tech Kuepa",
+			"fechadegraduacion":"13-agosto-2021",
+			"otrosintereses":"",
+		}
+	]
+
+}

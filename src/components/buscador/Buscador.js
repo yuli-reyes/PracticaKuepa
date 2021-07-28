@@ -38,11 +38,11 @@ import filtro from './filter-solid.svg';
 	return(
 
 		<div className="container-fluid">
-			<div className="row mt-3 buscador">
-				<div className=" selectfiltro col-sm-12 col-md-6">								
+			<div className="row justify-content-end mt-3 buscador">
+				<div className=" selectfiltro col-sm-12 col-md-6 col-lg-4">								
 					<App/>	
 				</div>	
-				<div  className="buscar col-sm-12 col-md-6">
+				<div  className="buscar col-sm-12 col-md-6 col-lg-8">
 					<div className="input-group">
 						<input type="text" className="form-control" placeholder="Escribe de acuerdo a tu elección" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 						<div className="input-group-append">

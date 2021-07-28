@@ -19,17 +19,22 @@
 	color: #FFFFFF;
 	font-weight: 700;
 }
+.btn-buscar:hover{
+	background-color: #FFFFFF;
+	color: #30A296;
+	border: 1px solid #30A296;
+
+}
 
 .selectfiltro{
 	max-width: 400px;
 	width: 100%;
-	margin: auto;
+	
 	
 }
 
 .buscar{
 	max-width: 400px;
 	width: 100%;
-	margin: auto;
-}
+	}
 
