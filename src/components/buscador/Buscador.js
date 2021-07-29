@@ -29,7 +29,7 @@ import filtro from './filter-solid.svg';
 	function Selector(){
 		return(
 			<div className="Selector">
-			
+			{/*<FontAwesomeIcon...*/}
 			<Select className="select" styles={styles} options={options}/>
 			</div>
 			)
