@@ -22,7 +22,7 @@ function Header(){
 		        		<FontAwesomeIcon icon={faUserCircle} />
 		        	</div>
 
-		        	<div className="col-sm-12 col-md-1 col-lg-2 iconexit">	
+		        	<div className="col-sm-12 col-md-2 col-lg-2 iconexit">	
 		        		<Link to='/'><FontAwesomeIcon icon={faDoorOpen} /><a href="#" role="button">SALIR</a></Link>
 		        	</div>
 
