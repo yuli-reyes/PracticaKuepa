@@ -1,0 +1,104 @@
+.seccionhv{
+  font-family: 'Montserrat';
+  padding: 0px;
+}
+
+.cajaperfil{
+  padding: 0px;
+}
+
+.cajadatos{
+  padding: 0px;
+}
+
+.linean{
+  margin-top: 40px;
+  background-color: #F86433;
+  text-align: center;
+  color: #FFFFFF;
+  min-height: 50px;
+}
+.linean h5{
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.fondooscuro{
+  background-color: #229185;
+  padding: 50px;
+  color: #FFFFFF;
+
+}
+
+.fondoverde{
+  background-color: #30A296;
+  padding: 50px;
+  color: #FFFFFF;
+}
+
+.fondoverde h5{
+  font-weight: 700;
+}
+
+.nombre h4{
+  padding-top: 20px;
+  margin: 0px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.btn-editar{
+  padding: 6px 20px;
+  background-color: #F86433;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.btn-editar:hover{
+  background-color: #FFFFFF;
+  color: #F86433;
+  border: 1px solid #F86433;;
+
+}
+
+.bordeverde{
+  background-color: #229185;
+  min-height: 10px;  
+
+}
+
+table { 
+  margin: 50px 20px 50px 20px; 
+  border-collapse: collapse;
+  width: 100%;  
+}
+
+th {
+  border: 1px solid #000000;
+  background-color: #dddddd;
+  text-align: center;
+  padding: 8px;
+
+}
+
+td {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 8px;
+}
+
+.pencil{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.trash{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.table-responsive{
+  margin: 40px;
+}
