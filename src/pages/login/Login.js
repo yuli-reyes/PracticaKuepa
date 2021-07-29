@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGraduate,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons';
 import Botonlogin from '../../components/botonlogin/Botonlogin';
 
+import {
+  Link  
+} from "react-router-dom";
+
 function Login(){
   return(
 
@@ -30,7 +34,7 @@ function Login(){
                         <input type="text" id="clave" placeholder=" Contraseña" />
                       </div>                                
                       <div className="mt-4">
-                       <Botonlogin/>
+                       <Link to="/dashboard"><Botonlogin/></Link>
                       </div>
                   </form>                   
               </div>

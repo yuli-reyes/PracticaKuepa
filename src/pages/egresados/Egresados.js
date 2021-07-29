@@ -1,14 +1,18 @@
-import {egresados} from '../../components/cardegresados/Card.json';
-import Cardegresados from '../../components/cardegresados/Cardegresados';
+import Header from '../../components/header/Header';
+import Navegre from '../../components/navegre/Navegre';
+import Buscador from '../../components/buscador/Buscador';
+import Cardegre from '../../components/cardegresados/Cardegresados';
 
 
 function Egresados(){
 	return(
-		<div className="container-fluid">
-			<div className="row">
-				
-			</div>
+		<div>
+			<Header />
+			<Navegre />
+			<Buscador />
+			<Cardegre />
 		</div>
-		)
+		);
 }
+
 export default Egresados;

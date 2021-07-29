@@ -1,3 +1,21 @@
+
+.cajacards{
+
+	padding: 30px;
+}
+
+.card{
+
+	max-width:600px;
+	width: 100%;
+	min-height: 250px;
+	height: 100%;
+	border: 1px solid #b5b4b4;
+
+}
+
+
+
 .boton{
 	padding: 10px 50px;
 	margin: 0px 10px;
@@ -22,4 +40,46 @@
 .foto{
 	border-radius: 10px;
 	padding-top: 20px;
+}
+
+.btn-ver{
+	background-color: #FFFFFF;
+	border: 1px solid #F86433;
+	color: #F86433;
+	padding: 6px 12px;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.btn-ver:hover{
+	background-color:#F86433; 
+	color: #ffffff;
+}
+
+.btn-edit{
+	background-color: #30A296;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 6px 20px;
+	border-radius: 5px;
+}
+
+.btn-edit:hover{
+	background-color: #ffffff;
+	color: #30A296;
+	border: 1px solid #30A296;
+}
+
+.btn-eliminar{
+	background-color: #ff0000;
+	color: #ffffff;	
+	font-weight: 600;
+	padding: 6px 20px;
+	border-radius: 5px;
+}
+
+.btn-eliminar:hover{
+	background-color: #ffffff;
+	color: #ff0000;
+	border: 1px solid #ff0000;
 }
