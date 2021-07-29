@@ -2,9 +2,6 @@ import './botonlogin.css';
 import Swal from "sweetalert2";
 import logotitulando from '../../img/logotitulando.png';
 
-
-
-
 function Botonlogin(){
 	const mostrarBienvenida=()=>{
 		Swal.fire({

@@ -3,7 +3,9 @@ import logokuepa from '../../img/logokuepa.png';
 import logotitulando from '../../img/logotitulando.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faDoorOpen } from '@fortawesome/free-solid-svg-icons';
-
+import {
+  Link  
+} from "react-router-dom";
 
 function Header(){
 	return(
@@ -21,7 +23,7 @@ function Header(){
 		        	</div>
 
 		        	<div className="col-sm-12 col-md-1 col-lg-2 iconexit">	
-		        		<FontAwesomeIcon icon={faDoorOpen} /><a href="#" role="button">SALIR</a>
+		        		<Link to='/'><FontAwesomeIcon icon={faDoorOpen} /><a href="#" role="button">SALIR</a></Link>
 		        	</div>
 
 	        	</div>

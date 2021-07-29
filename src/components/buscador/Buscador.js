@@ -26,9 +26,9 @@ import filtro from './filter-solid.svg';
 			fontFamily:"Montserrat"
 		})
 	};
-	function App(){
+	function Selector(){
 		return(
-			<div className="App">
+			<div className="Selector">
 			
 			<Select className="select" styles={styles} options={options}/>
 			</div>
@@ -40,7 +40,7 @@ import filtro from './filter-solid.svg';
 		<div className="container-fluid">
 			<div className="row justify-content-end mt-3 buscador">
 				<div className=" selectfiltro col-sm-12 col-md-6 col-lg-4">								
-					<App/>	
+					<Selector />	
 				</div>	
 				<div  className="buscar col-sm-12 col-md-6 col-lg-8">
 					<div className="input-group">
