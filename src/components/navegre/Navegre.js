@@ -7,16 +7,16 @@ function Navegre(){
 		<div>
 			<nav>
 				<div className="container-fluid">
-					<div className="row">
-						<div className="col-sm-12 col-md-9">
-							<h3><FontAwesomeIcon icon={faGraduationCap} className="icon"/>EGRESADOS</h3>
+					<div className="row fondonav">
+						<div className="col-sm-12 col-md-8">
+							<h3 className="tituloegre"><FontAwesomeIcon icon={faGraduationCap} className="icon"/>EGRESADOS</h3>
 						</div>
-						<div className="col-sm-12 col-md-1 home">							
+						<div className="col-sm-6 col-md-2 home">							
 							<FontAwesomeIcon icon={faHome} className="home"/>					
 						</div>
-						<div className="col-sm-12 col-md-2 volver">
+						<div className="col-sm-6 col-md-2 volver">
 							<FontAwesomeIcon icon={faArrowCircleLeft} className="iconvolver"/>
-							<a href="#" role="button"> VOLVER</a>
+							<a onClick={()=>{window.history.back()}} role="button">  VOLVER</a>
 						</div>
 					</div>
 				</div>
