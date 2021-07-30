@@ -2,6 +2,9 @@ import './cardegresados.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle, faEdit} from '@fortawesome/free-solid-svg-icons';
 import estudiante from './graduate-student.jpg';
+import {
+  Link  
+} from "react-router-dom";
 
 
 function Cardegre() {
@@ -10,7 +13,7 @@ function Cardegre() {
 		<div className="container-fluid cajacards">
 			<div className="row mt-3 justify-content-start">						
 				<div className="col-sm-12 col-md-3">
-					<button className="boton"><FontAwesomeIcon icon={ faPlusCircle } className="icono"/> NUEVO EGRESADO</button>
+					<Link to="/formegresados"><button className="boton"><FontAwesomeIcon icon={ faPlusCircle } className="icono"/> NUEVO EGRESADO</button></Link>
 				</div>
 				<div className="col-sm-12 col-md-9">				
 					<button className="boton"><FontAwesomeIcon icon={ faEdit } className="icono"/> HISTORIAL EGRESADOS</button>
@@ -36,7 +39,7 @@ function Cardegre() {
 						</div>
 						<div className="row">
 							<div className="col-sm-12 col-md-12 text-center">
-							<button className="btn-ver">VER MAS</button>
+							<Link to="/hvegresados"><button className="btn-ver">VER MAS</button></Link>
 							</div>
 						</div>
 				      	<div className="row mt-3">
@@ -66,7 +69,7 @@ function Cardegre() {
 						</div>
 						<div className="row">
 							<div className="col-sm-12 col-md-12 text-center">
-							<button className="btn-ver">VER MAS</button>
+							<Link to="/hvegresados"><button className="btn-ver">VER MAS</button></Link>
 							</div>
 						</div>
 				      	<div className="row mt-3">
@@ -96,7 +99,7 @@ function Cardegre() {
 						</div>
 						<div className="row">
 							<div className="col-sm-12 col-md-12 text-center">
-							<button className="btn-ver">VER MAS</button>
+							<Link to="/hvegresados"><button className="btn-ver">VER MAS</button></Link>
 							</div>
 						</div>
 				      	<div className="row mt-3">
