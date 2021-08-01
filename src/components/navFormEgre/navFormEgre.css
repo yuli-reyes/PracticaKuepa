@@ -1,0 +1,41 @@
+nav{
+	background-color: #B5B4B4;
+}
+.menu{
+	margin: 0px;
+	padding: 0px;
+}
+.item{
+	line-height: 4;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+}
+.item a{
+	text-decoration: none;
+	color: #FFFFFF;
+	display: block;
+}
+.item:hover{
+	background-color: #F86433;
+}
+.active{
+	background-color: #DD5020;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .menu {
+  	display: flex;
+    flex-direction: row;
+    padding: 0;
+   }
+
+   
+   .item{
+   	flex-grow: 1;
+   }
+}
+

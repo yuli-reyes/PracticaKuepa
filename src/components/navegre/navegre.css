@@ -2,8 +2,12 @@
 	font-size: 30px;
 	padding: 0px;
 	text-align: right;
-
+	
 }
+.home a{
+	color: #000000;
+}
+
 
 .volver{
 	display: flex;
