@@ -1,4 +1,8 @@
 import './navFormEgre.css';
+import {
+  
+  NavLink
+} from "react-router-dom";
 
 
 
@@ -6,16 +10,20 @@ import './navFormEgre.css';
 function NavFormEgre(){
 	return(
 	<div className="container-fluid">	
-		<div className="row">
+		<div >
 				<nav>
-					 <ul className="row menu">
-						 <li className="item col-sm-12 col-md-6 text-center">DATOS DEL EGRESADO</li>	
-						 <li className="item col-sm-12 col-md-6 text-center">DATOS ACÁDEMICOS</li>		
+					 <ul className="menu">
+						 <li className="item">
+						 	<NavLink to="/formegresados" activeClassName="active">DATOS DEL EGRESADO</NavLink>
+						 </li>	
+						 <li className="item">
+						 	<NavLink to="/formulariodatosacademicos" activeClassName="active">DATOS ACADÉMICOS</NavLink>
+						 </li>		
 					 </ul>
 			    </nav>	
 		</div>
 	</div>	
 
-		)
+		);
 }
 export default NavFormEgre;

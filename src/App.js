@@ -6,6 +6,8 @@ import Dashboard from './pages/dashboardp/Dashboardp';
 import Egresados from './pages/egresados/Egresados';
 import Hvegresados from './pages/hvegresados/Hvegresados';
 import FormEgre from './pages/formEgre/FormEgre';
+import FormDatoAca from './pages/formDatoAca/FormDatoAcademico';
+
 
 import {
   BrowserRouter as Router,
@@ -37,8 +39,12 @@ function App() {
             <Route exact path="/formegresados">
               <FormEgre />
             </Route>
+            <Route exact path="/formulariodatosacademicos">
+              <FormDatoAca /> 
+            </Route>
 
-          </Switch>          
+          </Switch>
+                   
           <Footer />
 
       </Router>

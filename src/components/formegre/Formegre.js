@@ -1,6 +1,6 @@
 import './formegre.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { powerOff } from '@fortawesome/free-solid-svg-icons';
+import { faPowerOff,faSave  } from '@fortawesome/free-solid-svg-icons';
 import estudiante from '../cardegresados/graduate-student.jpg';
 
 
@@ -12,7 +12,7 @@ function Formegre(){
 				<form>
 					<div className="row">
 							<div className="fotoform col-sm-12 col-md-4">
-							  <img src={ estudiante } width="200px"/>
+							  <img src={ estudiante } width="250px"/>
 							</div>  
 	                        <div className="col-sm-12 col-md-8">
 								<div className="row">
@@ -32,13 +32,14 @@ function Formegre(){
 					</div>
 					<div className="row">
 						<div className="col-sm-12 col-md-4 text-center mt-5">
-							<button className="botonfoto">CARGAR FOTO</button>
+							<label type="text" name="archivo">CARGAR FOTO</label>
+							<input type="file" name="archivo"/>
 						</div>
 						<div className="col-sm-12 col-md-4 text-center mt-5">
-							<button className="btncerrar">CERRAR</button>
+							<button className="btncerrar"><FontAwesomeIcon icon={ faPowerOff } /> CERRAR</button>
 						</div>
 						<div className="col-sm-12 col-md-4 text-center mt-5"> 
-							<button className="btnguardar">GUARDAR CAMBIOS</button>
+							<button className="btnguardar"><FontAwesomeIcon icon={  faSave } /> GUARDAR CAMBIOS</button>
 						</div>
 					</div>
 				</form>					 
