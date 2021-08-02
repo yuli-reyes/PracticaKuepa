@@ -7,6 +7,7 @@ import Egresados from './pages/egresados/Egresados';
 import Hvegresados from './pages/hvegresados/Hvegresados';
 import FormEgre from './pages/formEgre/FormEgre';
 import FormDatoAca from './pages/formDatoAca/FormDatoAcademico';
+import Seguimiento from './pages/seguimiento/Seguimiento';
 
 
 import {
@@ -43,8 +44,11 @@ function App() {
               <FormDatoAca /> 
             </Route>
 
-          </Switch>
-                   
+            <Route exact path="/seguimiento">
+              <Seguimiento /> 
+            </Route>
+
+          </Switch>                   
           <Footer />
 
       </Router>

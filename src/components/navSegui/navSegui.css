@@ -1,0 +1,53 @@
+.home{
+	font-size: 30px;
+	padding: 0px;
+	text-align: right;
+	
+}
+.home a{
+	color: #000000;
+}
+
+
+.volver{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.volver a{
+	text-align: center;
+	margin: 0px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 19px;
+	
+}
+
+.iconvolver{
+	font-size: 25px;
+	margin-right: 5px;
+}
+
+.tituloegre{
+	font-size: 20px;
+
+}
+
+.fondonav{
+	background-color: #F4F6F6;
+	min-height: 10vh;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-family: "Montserrat";
+	font-size: 20px;
+
+}
+
+@media screen (max-width 768px){
+	.home{
+		text-align: center;
+	}
+}
