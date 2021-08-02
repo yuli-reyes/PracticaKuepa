@@ -1,0 +1,101 @@
+.cajacards{
+
+	padding: 30px;
+}
+.filacard{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card{
+	max-width:400px;
+	width: 100%;
+	min-height: 250px;
+	height: 100%;
+	border: 1px solid #b5b4b4;
+	padding-bottom: 15px;
+
+}
+.card-title{
+	text-align: center;
+	padding-top: 15px;
+}
+
+
+
+.boton{
+	padding: 10px 40px;
+	margin: 0px 10px;
+	background-color: #F86433;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 18px;
+	
+
+}
+.boton:hover{
+	background-color: #FFFFFF;
+	border: 1px solid #F86433;
+	color: #F86433;
+
+}
+
+
+.icono{
+	font-size: 20px;
+}
+.foto{
+	border-radius: 10px;
+	
+}
+.cajafoto{
+	display: flex;
+	align-items: center;
+	
+}
+
+.btn-ver{
+	background-color: #FFFFFF;
+	border: 1px solid #F86433;
+	color: #F86433;
+	padding: 6px 12px;
+	border-radius: 5px;
+	font-weight: 600;
+
+}
+
+.btn-ver:hover{
+	background-color:#F86433; 
+	color: #ffffff;
+}
+
+.btn-registro{
+	background-color: #30A296;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 6px 20px;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.btn-registro:hover{
+	background-color: #ffffff;
+	color: #30A296;
+	border: 1px solid #30A296;
+}
+
+.btn-eliminars{
+	background-color: #ff0000;
+	color: #ffffff;	
+	font-weight: 600;
+	padding: 6px 40px;
+	font-size: 13px;
+	border-radius: 5px;
+}
+
+.btn-eliminars:hover{
+	background-color: #ffffff;
+	color: #ff0000;
+	border: 1px solid #ff0000;
+}

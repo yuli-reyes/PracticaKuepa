@@ -26,6 +26,16 @@ function Login(){
 })
   }
 
+  const mostrarError=()=>{
+    Swal.fire({
+      icon: 'error',
+      title: 'Datos incorrectos',
+      text: 'Inténtalo de nuevo.',
+      confirmButtonText: 'Aceptar',
+      confirmButtonColor: '#30A296'
+})
+  }
+
 const handleSubmit=(e)=>{
     let usuario="yulidiana"
     let contrasena="123abc"    
@@ -38,12 +48,9 @@ const handleSubmit=(e)=>{
         window.location.replace("/dashboard")
     }
     else{
-      alert("datos incorrectos")
+      mostrarError()      
     }
-    
-
-}
-
+  }
 
   return(
 
@@ -62,11 +69,11 @@ const handleSubmit=(e)=>{
 
                       <div className="input-group mb-3 mt-4 cajainput text-center">
                         <span className="input-group-text"><FontAwesomeIcon icon={faUserGraduate} className="icon"/></span>
-                        <input type="text" id="usuario" placeholder=" Usuario" />
+                        <input type="text" id="usuario" placeholder="Usuario" />
                       </div> 
                       <div className="input-group mb-3 cajainput ">
                         <span className="input-group-text"><FontAwesomeIcon icon={faUnlockAlt} className="icon"/></span>
-                        <input type="password" id="clave" placeholder=" Contraseña" />
+                        <input type="password" id="clave" placeholder="Contraseña" />
                       </div>                                
                       <div className="mt-4">
                        <Botonlogin />

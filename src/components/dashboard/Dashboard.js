@@ -19,7 +19,7 @@ function Dashboard(){
 					</div>
 				</div>
 				<div className="col-sm-12 col-md-6 cajaazul">				
-					<button className="btn-seguimiento"><img src={iconseguimiento} width="50px" /> SEGUIMIENTO</button>
+					<Link to="/seguimiento"><button className="btn-seguimiento"><img src={iconseguimiento} width="50px" /> SEGUIMIENTO</button></Link>
 					<div className="seccion2">
 						<p>Podrás realizar el seguimiento a los egresados, ver y actualizar sus  datos académicos y laborales, para llevar un control anual de sus actividades.</p>
 					</div>
