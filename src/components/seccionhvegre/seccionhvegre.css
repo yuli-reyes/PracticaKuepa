@@ -89,6 +89,10 @@ td {
   padding: 8px;
 }
 
+.icono-acciones a{
+  color: #000000;
+}
+
 .pencil{
   margin-right: 10px;
   font-size: 20px;

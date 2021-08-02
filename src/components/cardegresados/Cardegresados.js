@@ -1,23 +1,45 @@
 import './cardegresados.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle, faEdit} from '@fortawesome/free-solid-svg-icons';
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import estudiante from './graduate-student.jpg';
+import Swal from "sweetalert2";
 import {
   Link  
 } from "react-router-dom";
 
 
 function Cardegre() {
+
+	const mostrarEliminar=()=>{
+	Swal.fire({
+	  title: '¿Estás seguro de eliminar?',
+	  icon: 'warning',
+	  showCancelButton: true,
+	  confirmButtonColor: '#7DB346',
+	  cancelButtonColor: '#ff0000',
+	  cancelButtonText: 'Cancelar',
+	  confirmButtonText: 'Si, deseo eliminar'
+	}).then((result) => {
+	  if (result.isConfirmed) {
+	    Swal.fire(
+	      '¡Eliminado!',
+	      'La información ha sido eliminada.',
+	      'success'
+	    )
+	  }
+	})
+}
+
+
+
 	return(
 
 		<div className="container-fluid cajacards">
 			<div className="row mt-3 justify-content-start">						
-				<div className="col-sm-12 col-md-3">
+				<div className="col-sm-12 col-md-12">
 					<Link to="/formegresados"><button className="boton"><FontAwesomeIcon icon={ faPlusCircle } className="icono"/> NUEVO EGRESADO</button></Link>
 				</div>
-				<div className="col-sm-12 col-md-9">				
-					<button className="boton"><FontAwesomeIcon icon={ faEdit } className="icono"/> HISTORIAL EGRESADOS</button>
-				</div>
+
 			</div>
 			<div>
 				<div className="row mt-5 filacard">	
@@ -44,10 +66,10 @@ function Cardegre() {
 						</div>
 				      	<div className="row mt-3">
 					  		<div className="col-sm-12 col-md-6 text-center">
-					  			<button className="btn-edit">EDITAR</button>
+					  			<Link to="/formegresados"><button className="btn-edit">EDITAR</button></Link>
 					      	</div>
 					      	<div className="col-sm-12 col-md-6 text-center">
-					      		<button className="btn-eliminar">ELIMINAR</button>
+					      		<button className="btn-eliminar" onClick={()=>{mostrarEliminar()}}>ELIMINAR</button>
 					      	</div>
 				      	</div>  	  	
 					</div>
@@ -74,10 +96,10 @@ function Cardegre() {
 						</div>
 				      	<div className="row mt-3">
 					  		<div className="col-sm-12 col-md-6 text-center">
-					  			<button className="btn-edit">EDITAR</button>
+					  			<Link to="/formegresados"><button className="btn-edit">EDITAR</button></Link>
 					      	</div>
 					      	<div className="col-sm-12 col-md-6 text-center">
-					      		<button className="btn-eliminar">ELIMINAR</button>
+					      		<button className="btn-eliminar" onClick={()=>{mostrarEliminar()}}>ELIMINAR</button>
 					      	</div>
 				      	</div>  	  	
 					</div>
@@ -104,10 +126,10 @@ function Cardegre() {
 						</div>
 				      	<div className="row mt-3">
 					  		<div className="col-sm-12 col-md-6 text-center">
-					  			<button className="btn-edit">EDITAR</button>
+					  			<Link to="/formegresados"><button className="btn-edit">EDITAR</button></Link>
 					      	</div>
 					      	<div className="col-sm-12 col-md-6 text-center">
-					      		<button className="btn-eliminar">ELIMINAR</button>
+					      		<button className="btn-eliminar" onClick={()=>{mostrarEliminar()}}>ELIMINAR</button>
 					      	</div>
 				      	</div>  	  	
 					</div>

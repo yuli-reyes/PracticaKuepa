@@ -2,8 +2,36 @@ import './seccionhvegre.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import Swal from "sweetalert2";
+
+
+import {
+  Link  
+} from "react-router-dom";
 
 function Seccionhvegre(){
+
+	const mostrarAccion=()=>{
+	Swal.fire({
+	  title: '¿Estás seguro de eliminar?',
+	  icon: 'warning',
+	  showCancelButton: true,
+	  confirmButtonColor: '#7DB346',
+	  cancelButtonColor: '#ff0000',
+	  cancelButtonText: 'Cancelar',
+	  confirmButtonText: 'Si, deseo eliminar'
+	}).then((result) => {
+	  if (result.isConfirmed) {
+	    Swal.fire(
+	      '¡Eliminado!',
+	      'La información ha sido eliminada.',
+	      'success'
+	    )
+	  }
+	})
+
+  }
+
 	return(
 
 		<div className="container-fluid seccionhv">
@@ -28,14 +56,12 @@ function Seccionhvegre(){
 							<p>Dirección: Calle 75 #43-50</p>
 							<p>Correo: juanito@gmail.com</p>
 						</div>
-						<div>
-							<button className="btn-editar">EDITAR</button>
+						<div className="text-center">
+							<Link to="/formegresados"><button className="btn-editar">EDITAR</button></Link>
 						</div>
 
 					</div>
 				</div>
-
-					
 
 
 				<div className="cajadatos col-12 col-md-8 col-lg-8">
@@ -61,7 +87,8 @@ function Seccionhvegre(){
 						    <td>Kuepa</td>
 						    <td>Graduado</td>
 						    <td>20 de Julio 2021</td>
-						    <td><FontAwesomeIcon icon={faPencilAlt} className="pencil"/><FontAwesomeIcon icon={faTrashAlt} className="trash"/></td>
+						    <td className="icono-acciones"><a><Link to="/formulariodatosacademicos"><FontAwesomeIcon icon={faPencilAlt} className="pencil" /></Link></a>						    
+						    <a onClick={()=>{mostrarAccion()}} role="button"><FontAwesomeIcon icon={faTrashAlt} className="trash"/></a></td>
 						  </tr>
 						</table>
 					</div>
