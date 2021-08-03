@@ -24,7 +24,7 @@
 }
 
 .fondooscuro{
-  background-color: #229185;
+  background-color: #229185;  
   padding: 50px;
   height: 50%;
   color: #FFFFFF;
@@ -32,8 +32,8 @@
 }
 
 .fondoverde{
-  height: 50%;
   background-color: #30A296;
+  height: 50%;
   padding: 50px;
   color: #FFFFFF;
 }
