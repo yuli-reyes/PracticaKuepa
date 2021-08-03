@@ -11,10 +11,10 @@ function NavFormSegui(){
 				<nav>
 					 <ul className="menu">
 						 <li className="item">
-						 	<NavLink to="/formegresados" activeClassName="active">DATOS DEL EGRESADO</NavLink>
+						 	<NavLink to="/formseguimiento" activeClassName="active">DATOS DEL EGRESADO</NavLink>
 						 </li>	
 						 <li className="item">
-						 	<NavLink to="/formulariodatosacademicos" activeClassName="active">DATOS ACADÉMICOS</NavLink>
+						 	<NavLink to="/formacaseguimiento" activeClassName="active">DATOS ACADÉMICOS</NavLink>
 						 </li>
 						 <li className="item">
 						 	<NavLink to="/formulariodatosacademicos" activeClassName="active">DATOS LABORALES</NavLink>

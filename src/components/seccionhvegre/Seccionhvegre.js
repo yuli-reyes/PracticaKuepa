@@ -73,7 +73,7 @@ function Seccionhvegre(){
 					</div>
 					<div className="table-responsive">
 						<table>
-						  <tr>
+						  <tr className="tabla">
 						    <th>Fecha de Registro</th>
 						    <th>Programa</th>
 						    <th>Institución</th>

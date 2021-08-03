@@ -10,7 +10,11 @@ import FormDatoAca from './pages/formDatoAca/FormDatoAcademico';
 import Seguimiento from './pages/seguimiento/Seguimiento';
 import HVseguimiento from './pages/hvSeguimiento/HVseguimiento';
 import FormSegui from './pages/formSegui/FormSegui';
-import FormDatoAcaSegui from './components/formDatoAcaSegui/FormDatoAcaSegui';
+import FormAcaSegui from './pages/formAcaSegui/FormAcaSegui';
+
+
+
+
 
 import {
   BrowserRouter as Router,
@@ -53,10 +57,15 @@ function App() {
             <Route exact path="/hvseguimiento">
               <HVseguimiento /> 
             </Route>
+             <Route exact path="/formseguimiento">
+              <FormSegui /> 
+            </Route>
+            <Route exact path="/formacaseguimiento">
+              <FormAcaSegui /> 
+            </Route>
 
           </Switch>
-          <FormSegui />
-          <FormDatoAcaSegui />                  
+                          
           <Footer />
 
       </Router>
