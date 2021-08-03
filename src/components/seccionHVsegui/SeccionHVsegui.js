@@ -1,4 +1,4 @@
-import './seccionhvegre.css';
+import './seccionHVsegui.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,7 @@ import {
   Link  
 } from "react-router-dom";
 
-function Seccionhvegre(){
+function SeccionHVsegui(){
 
 	const mostrarAccion=()=>{
 	Swal.fire({
@@ -35,7 +35,7 @@ function Seccionhvegre(){
 	return(
 
 		<div className="container-fluid seccionhv">
-			<div className="row min-vh-100">
+			<div className="row max-vh-100">
 				<div className="cajaperfil col-12 col-md-4 col-lg-4">
 					<div className="fondooscuro text-center">
 						<div className="fotoegre">
@@ -57,7 +57,7 @@ function Seccionhvegre(){
 							<p>Correo: juanito@gmail.com</p>
 						</div>
 						<div className="text-center">
-							<Link to="/formegresados"><button className="btn-editar mt-3">EDITAR</button></Link>
+							<Link to="/formegresados"><button className="btn-editar mt-3">ACTUALIZAR DATOS EGRESADO</button></Link>
 						</div>
 
 					</div>
@@ -95,6 +95,31 @@ function Seccionhvegre(){
 					<div className="linean">
 						<h5>Datos Laborales</h5>
 					</div>
+					<div className="table-responsive">
+						<table>
+						  <tr>
+						    <th>Fecha de Registro</th>
+						    <th>Nombre de la Empresa</th>
+						    <th>Dirección de la Empresa</th>
+						    <th>Fecha de Ingreso</th>
+						    <th>Tipo de Contrato</th>
+						    <th>Salario</th>
+						    <th>Cargo</th>
+						    <th>Acciones</th>
+						  </tr>
+						  <tr>
+						    <td>21/07/2021</td>
+						    <td>Globant</td>
+						    <td>Calle 180 #10-57</td>						    
+						    <td>01/07/2021</td>
+						    <td>Término Indefinido</td>
+						    <td>3 Salarios mínimos</td>
+						    <td>Front-End Junior</td>
+						    <td className="icono-acciones"><a><Link to="/formulariodatosacademicos"><FontAwesomeIcon icon={faPencilAlt} className="pencil" /></Link></a>						    
+						    <a onClick={()=>{mostrarAccion()}} role="button"><FontAwesomeIcon icon={faTrashAlt} className="trash"/></a></td>
+						  </tr>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -103,4 +128,4 @@ function Seccionhvegre(){
 		);
 }
 
-export default Seccionhvegre;
+export default SeccionHVsegui;

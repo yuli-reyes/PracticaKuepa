@@ -8,7 +8,9 @@ import Hvegresados from './pages/hvegresados/Hvegresados';
 import FormEgre from './pages/formEgre/FormEgre';
 import FormDatoAca from './pages/formDatoAca/FormDatoAcademico';
 import Seguimiento from './pages/seguimiento/Seguimiento';
-
+import HVseguimiento from './pages/hvSeguimiento/HVseguimiento';
+import FormSegui from './pages/formSegui/FormSegui';
+import FormDatoAcaSegui from './components/formDatoAcaSegui/FormDatoAcaSegui';
 
 import {
   BrowserRouter as Router,
@@ -48,7 +50,13 @@ function App() {
               <Seguimiento /> 
             </Route>
 
-          </Switch>                   
+            <Route exact path="/hvseguimiento">
+              <HVseguimiento /> 
+            </Route>
+
+          </Switch>
+          <FormSegui />
+          <FormDatoAcaSegui />                  
           <Footer />
 
       </Router>

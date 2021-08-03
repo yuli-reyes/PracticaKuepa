@@ -55,7 +55,7 @@ function Cardsegui() {
 						</div>
 						<div className="row">
 							<div className="col-sm-12 col-md-12 text-center">
-							<Link to="/hvegresados"><button className="btn-ver">VER MAS</button></Link>
+							<Link to="/hvseguimiento"><button className="btn-ver">VER MAS</button></Link>
 							</div>
 						</div>
 				      	<div className="row mt-3">
@@ -85,7 +85,7 @@ function Cardsegui() {
 						</div>
 						<div className="row">
 							<div className="col-sm-12 col-md-12 text-center">
-							<Link to="/hvegresados"><button className="btn-ver">VER MAS</button></Link>
+							<Link to="/hvseguimiento"><button className="btn-ver">VER MAS</button></Link>
 							</div>
 						</div>
 				      	<div className="row mt-3">
@@ -114,7 +114,7 @@ function Cardsegui() {
 						</div>
 						<div className="row">
 							<div className="col-sm-12 col-md-12 text-center">
-							<Link to="/hvegresados"><button className="btn-ver">VER MAS</button></Link>
+							<Link to="/hvseguimiento"><button className="btn-ver">VER MAS</button></Link>
 							</div>
 						</div>
 				      	<div className="row mt-3">

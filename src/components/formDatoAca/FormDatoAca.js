@@ -4,7 +4,6 @@ import { faPowerOff,faSave  } from '@fortawesome/free-solid-svg-icons';
 import estudiante from '../cardegresados/graduate-student.jpg';
 
 
-
 function FormDatoAca(){
 	return(
 		<div className="general container-fluid">
