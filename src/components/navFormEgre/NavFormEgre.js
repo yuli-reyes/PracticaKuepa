@@ -11,13 +11,13 @@ function NavFormEgre(){
 	return(
 	<div className="container-fluid">	
 		<div >
-				<nav>
+				<nav className="barra">
 					 <ul className="menu">
-						 <li className="item">
-						 	<NavLink to="/formegresados" activeClassName="active">DATOS DEL EGRESADO</NavLink>
+						 <li className="iteme">
+						 	<NavLink to="/formegresados" activeClassName="activegre">DATOS DEL EGRESADO</NavLink>
 						 </li>	
-						 <li className="item">
-						 	<NavLink to="/formulariodatosacademicos" activeClassName="active">DATOS ACADÉMICOS</NavLink>
+						 <li className="iteme">
+						 	<NavLink to="/formulariodatosacademicos" activeClassName="activegre">DATOS ACADÉMICOS</NavLink>
 						 </li>		
 					 </ul>
 			    </nav>	

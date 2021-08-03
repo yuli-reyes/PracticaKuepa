@@ -19,7 +19,7 @@ textarea{
 
 
 .btnguardar{
-	background-color: #7DB346;
+	background-color: #229185;
 	padding: 6px 12px;
 	color: #FFFFFF;
 	border-radius: 5PX;
@@ -27,6 +27,6 @@ textarea{
 }
 .btnguardar:hover{
 	background-color: #FFFFFF;
-	color: #7DB346;
-	border: 1px solid #7DB346;
+	color: #229185;
+	border: 1px solid #229185;
 }

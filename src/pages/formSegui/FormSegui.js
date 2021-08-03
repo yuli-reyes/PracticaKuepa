@@ -1,4 +1,4 @@
-import Formsegui from '../../components/formegre/Formegre';
+import Formsegui from '../../components/formSegui/FormSegui';
 import Navsegui from '../../components/navSegui/NavSegui';
 import Header from '../../components/header/Header';
 import NavFormSegui from '../../components/navFormSegui/NavFormSegui';

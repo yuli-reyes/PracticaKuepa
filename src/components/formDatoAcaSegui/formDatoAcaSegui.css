@@ -15,7 +15,7 @@
 
 
 .botones{
-	background-color: #7DB346;
+	background-color: #30A296;
 	padding: 6px 12px;
 	color: #FFFFFF;
 	border-radius: 5PX;
@@ -23,6 +23,6 @@
 }
 .botones:hover{
 	background-color: #FFFFFF;
-	color: #7DB346;
-	border: 1px solid #7DB346;
+	color: #30A296;
+	border: 1px solid #30A296;
 }

@@ -17,10 +17,10 @@ nav{
 	display: block;
 }
 .item:hover{
-	background-color: #F86433;
+	background-color: #30A296;
 }
 .active{
-	background-color: #DD5020;
+	background-color: #229185;
 }
 
 
