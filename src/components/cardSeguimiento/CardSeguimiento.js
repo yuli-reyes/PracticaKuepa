@@ -15,7 +15,7 @@ function Cardsegui() {
 	  title: '¿Estás seguro de eliminar?',
 	  icon: 'warning',
 	  showCancelButton: true,
-	  confirmButtonColor: '#7DB346',
+	  confirmButtonColor: '#229185',
 	  cancelButtonColor: '#ff0000',
 	  cancelButtonText: 'Cancelar',
 	  confirmButtonText: 'Si, deseo eliminar'
@@ -60,7 +60,7 @@ function Cardsegui() {
 						</div>
 				      	<div className="row mt-3">
 					  		<div className="col-sm-12 col-md-7 text-center">
-					  			<Link to="/formegresados"><button className="btn-registro">REGISTRAR SEGUIMIENTO</button></Link>
+					  			<Link to="/formseguimiento"><button className="btn-registro">REGISTRAR SEGUIMIENTO</button></Link>
 					      	</div>
 					      	<div className="col-sm-12 col-md-5 text-center">
 					      		<button className="btn-eliminars" onClick={()=>{mostrarEliminar()}}>ELIMINAR</button>
@@ -90,7 +90,7 @@ function Cardsegui() {
 						</div>
 				      	<div className="row mt-3">
 					  		<div className="col-sm-12 col-md-7 text-center">
-									<Link to="/formegresados"><button className="btn-registro">REGISTRAR SEGUIMIENTO</button></Link>					      	</div>
+									<Link to="/formseguimiento"><button className="btn-registro">REGISTRAR SEGUIMIENTO</button></Link>					      	</div>
 					      	<div className="col-sm-12 col-md-5 text-center">
 					      		<button className="btn-eliminars" onClick={()=>{mostrarEliminar()}}>ELIMINAR</button>
 					      	</div>
@@ -119,7 +119,7 @@ function Cardsegui() {
 						</div>
 				      	<div className="row mt-3">
 					  		<div className="col-sm-12 col-md-7 text-center">
-					  			<Link to="/formegresados"><button className="btn-registro">REGISTRAR SEGUIMIENTO</button></Link>
+					  			<Link to="/formseguimiento"><button className="btn-registro">REGISTRAR SEGUIMIENTO</button></Link>
 					      	</div>
 					      	<div className="col-sm-12 col-md-5 text-center">
 					      		<button className="btn-eliminars" onClick={()=>{mostrarEliminar()}}>ELIMINAR</button>

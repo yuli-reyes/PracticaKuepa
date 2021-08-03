@@ -15,7 +15,7 @@ function Cardegre() {
 	  title: '¿Estás seguro de eliminar?',
 	  icon: 'warning',
 	  showCancelButton: true,
-	  confirmButtonColor: '#7DB346',
+	  confirmButtonColor: '#229185',
 	  cancelButtonColor: '#ff0000',
 	  cancelButtonText: 'Cancelar',
 	  confirmButtonText: 'Si, deseo eliminar'

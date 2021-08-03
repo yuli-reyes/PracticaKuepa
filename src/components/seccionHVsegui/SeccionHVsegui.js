@@ -73,7 +73,7 @@ function SeccionHVsegui(){
 					</div>
 					<div className="table-responsive">
 						<table>
-						  <tr>
+						  <tr className="tablas">
 						    <th>Fecha de Registro</th>
 						    <th>Programa</th>
 						    <th>Institución</th>
@@ -97,7 +97,7 @@ function SeccionHVsegui(){
 					</div>
 					<div className="table-responsive">
 						<table>
-						  <tr>
+						  <tr className="tablas">
 						    <th>Fecha de Registro</th>
 						    <th>Nombre de la Empresa</th>
 						    <th>Dirección de la Empresa</th>

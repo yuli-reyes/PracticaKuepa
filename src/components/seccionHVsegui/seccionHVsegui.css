@@ -76,9 +76,9 @@ table {
   width: 100%;  
 }
 
-th {
+.tablas th{
   border: 1px solid #000000;
-  background-color: #dddddd;
+  background-color:rgba(48, 162, 150, 0.5);
   text-align: center;
   padding: 8px;
 
