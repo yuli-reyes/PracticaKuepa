@@ -11,10 +11,7 @@ import Seguimiento from './pages/seguimiento/Seguimiento';
 import HVseguimiento from './pages/hvSeguimiento/HVseguimiento';
 import FormSegui from './pages/formSegui/FormSegui';
 import FormAcaSegui from './pages/formAcaSegui/FormAcaSegui';
-
-
-
-
+import DatoLaboral from './components/formDatoLaboral/FormDatoLaboral';
 
 import {
   BrowserRouter as Router,
@@ -27,6 +24,7 @@ function App() {
     <div>
       
       <Router>
+      <DatoLaboral/>
           <Switch>
 
             <Route exact path="/">
