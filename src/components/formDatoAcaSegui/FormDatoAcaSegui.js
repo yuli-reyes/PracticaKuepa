@@ -91,14 +91,11 @@ function FormDatoAcaSegui(){
 										</div>
 											
 									
-									<div className="row mt-5">
-										<div className="col-sm-12 col-md-4 text-center">
-											<button className="btn-guardar"><FontAwesomeIcon icon={ faSave } /> GUARDAR</button>						
-										</div>
-										<div className="col-sm-6 col-md-4 text-center">
+									<div className="row mt-5">										
+										<div className="col-sm-6 col-md-6 text-center">
 											<Link to="/formseguimiento"><button className="botones"><FontAwesomeIcon icon={ faChevronLeft } /> ANTERIOR</button></Link>						
 										</div>
-										<div className="col-sm-6 col-md-4 text-center">
+										<div className="col-sm-6 col-md-6 text-center">
 											<Link to="/formdatoslaborales"><button className="botones">SIGUIENTE <FontAwesomeIcon icon={ faChevronRight } /></button></Link>						
 										</div>
 									</div>

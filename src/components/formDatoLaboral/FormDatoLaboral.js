@@ -1,7 +1,7 @@
 import './formDatoLaboral.css';
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpload, faSave, faChevronLeft  } from '@fortawesome/free-solid-svg-icons';
+import {  faSave, faChevronLeft  } from '@fortawesome/free-solid-svg-icons';
 
 import {  
   Link
@@ -80,15 +80,12 @@ const handleChangeRadio = (e) => {
 			</form>
 			}
 
-				<div className="row mt-5 mb-4">
-					<div className="col-sm-12 col-md-4 text-center">
-						<button className="btn-guardarsegui"><FontAwesomeIcon icon={ faSave } /> GUARDAR</button>						
-					</div>
-					<div className="col-sm-6 col-md-4 text-center">
+				<div className="row mt-5 mb-4">					
+					<div className="col-sm-6 col-md-6 text-center">
 						<Link to="/formacaseguimiento"><button className="botonessegui"><FontAwesomeIcon icon={ faChevronLeft } /> ANTERIOR</button></Link>				
 					</div>
-					<div className="col-sm-6 col-md-4 text-center">
-						<button className="botonessegui"><FontAwesomeIcon icon={ faUpload } /> FINALIZAR</button>						
+					<div className="col-sm-6 col-md-6 text-center">
+						<button className="botonessegui"><FontAwesomeIcon icon={ faSave } /> GUARDAR</button>						
 					</div>
 				</div>
 				

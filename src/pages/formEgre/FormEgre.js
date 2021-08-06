@@ -3,13 +3,17 @@ import Navegre from '../../components/navegre/Navegre';
 import Header from '../../components/header/Header';
 import NavFormEgre from '../../components/navFormEgre/NavFormEgre';
 
-function FormEgre(){
+const FormEgre = () => {
+	const addTask = () => {
+		console.log('nueva tarea')
+	}
+	
 	return(
 		<div>
 		    <Header />
 	        <Navegre /> 
 	        <NavFormEgre />	         
-	        <Formegre />
+	        <Formegre addOrEdit={addTask}/>
 
 		</div>
 		);
