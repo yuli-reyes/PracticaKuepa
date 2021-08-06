@@ -17,7 +17,7 @@ function NavFormSegui(){
 						 	<NavLink to="/formacaseguimiento" activeClassName="active">DATOS ACADÉMICOS</NavLink>
 						 </li>
 						 <li className="item">
-						 	<NavLink to="/formulariodatosacademicos" activeClassName="active">DATOS LABORALES</NavLink>
+						 	<NavLink to="/formdatoslaborales" activeClassName="active">DATOS LABORALES</NavLink>
 						 </li>		
 					 </ul>
 			    </nav>	
