@@ -16,7 +16,7 @@ function SeccionHVsegui(){
 	  title: '¿Estás seguro de eliminar?',
 	  icon: 'warning',
 	  showCancelButton: true,
-	  confirmButtonColor: '#7DB346',
+	  confirmButtonColor: '#229185',
 	  cancelButtonColor: '#ff0000',
 	  cancelButtonText: 'Cancelar',
 	  confirmButtonText: 'Si, deseo eliminar'
@@ -57,7 +57,7 @@ function SeccionHVsegui(){
 							<p>Correo: juanito@gmail.com</p>
 						</div>
 						<div className="text-center">
-							<Link to="/formegresados"><button className="btn-editar mt-3">ACTUALIZAR DATOS EGRESADO</button></Link>
+							<Link to="/dashboard"><button className="btn-editar mt-3">ACTUALIZAR DATOS EGRESADO</button></Link>
 						</div>
 
 					</div>
