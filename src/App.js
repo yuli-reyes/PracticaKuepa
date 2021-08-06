@@ -11,7 +11,7 @@ import Seguimiento from './pages/seguimiento/Seguimiento';
 import HVseguimiento from './pages/hvSeguimiento/HVseguimiento';
 import FormSegui from './pages/formSegui/FormSegui';
 import FormAcaSegui from './pages/formAcaSegui/FormAcaSegui';
-import DatoLaboral from './components/formDatoLaboral/FormDatoLaboral';
+import FormDatoLaboral from './pages/formDatoLaboral/FormDatoLaboral';
 
 import {
   BrowserRouter as Router,
@@ -24,7 +24,6 @@ function App() {
     <div>
       
       <Router>
-      <DatoLaboral/>
           <Switch>
 
             <Route exact path="/">
@@ -55,12 +54,19 @@ function App() {
             <Route exact path="/hvseguimiento">
               <HVseguimiento /> 
             </Route>
+
              <Route exact path="/formseguimiento">
               <FormSegui /> 
             </Route>
+
             <Route exact path="/formacaseguimiento">
               <FormAcaSegui /> 
             </Route>
+
+            <Route exact path="/formdatoslaborales">
+              <FormDatoLaboral /> 
+            </Route>
+
 
           </Switch>
                           

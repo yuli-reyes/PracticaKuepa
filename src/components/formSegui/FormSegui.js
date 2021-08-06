@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPowerOff,faChevronRight  } from '@fortawesome/free-solid-svg-icons';
 import estudiante from '../cardegresados/graduate-student.jpg';
 
-
+import {
+  
+  Link
+} from "react-router-dom";
 
 function FormSeguimiento(){
 
@@ -29,7 +32,7 @@ function FormSeguimiento(){
 									</div>
 							  	</div>
 							  	<div className="col-sm-12 col-md-12 text-center mt-5">
-									<button className="btnsiguiente"> SIGUIENTE <FontAwesomeIcon icon={ faChevronRight} /></button>
+									<Link to="/formacaseguimiento"><button className="btnsiguiente"> SIGUIENTE <FontAwesomeIcon icon={ faChevronRight} /></button></Link>
 								</div>	
 							</div>
 					</div>

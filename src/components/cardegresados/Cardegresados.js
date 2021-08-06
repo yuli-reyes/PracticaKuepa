@@ -1,14 +1,28 @@
+import React, {useEffect,useState} from 'react';
 import './cardegresados.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import estudiante from './graduate-student.jpg';
 import Swal from "sweetalert2";
+import {db} from  '../../firebase';
+
 import {
   Link  
 } from "react-router-dom";
 
 
 function Cardegre() {
+
+	const [egresados,setEgresados] = useState([])
+
+		const getDatos = async () => {
+		const querySnapshot = await db.collection("datos").get();
+		const docs = []
+		querySnapshot.forEach(doc =>{
+			docs.push({...doc.data(),id:doc.id})
+		})
+		setEgresados(docs)
+	}
 
 	const mostrarEliminar=()=>{
 	Swal.fire({
@@ -30,7 +44,12 @@ function Cardegre() {
 	})
 }
 
+useEffect(()=>{
 
+	getDatos()
+	console.log(egresados)
+
+},[]) 
 
 	return(
 
