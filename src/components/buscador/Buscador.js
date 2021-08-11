@@ -15,7 +15,7 @@ import filtro from './filter-solid.svg';
 				
 				<div  className="buscar col-sm-12 col-md-12 col-lg-12">
 					<div className="input-group">
-						<input type="text" className="form-control" placeholder="Escribe de acuerdo a tu elección" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+						<input type="text" className="form-control" placeholder="Documento" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 						<div className="input-group-append">
 							<button className="btn-buscar" type="button">BUSCAR</button>
 						</div>
