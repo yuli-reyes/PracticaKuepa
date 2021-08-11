@@ -73,7 +73,11 @@
 table { 
   margin: 50px 20px 50px 20px; 
   border-collapse: collapse;
+  max-width: 1000px;
   width: 100%;  
+}
+.table-responsive{
+  margin: 0px;
 }
 
   
@@ -82,7 +86,7 @@ table {
   border: 1px solid #000000;
   background-color:rgba(48, 162, 150, 0.5);
   text-align: center;
-  padding: 8px;
+  padding: 8px 50px;
 
 }
 
@@ -90,7 +94,7 @@ td {
   background-color: #ffffff;
   border: 1px solid #000000;
   text-align: center;
-  padding: 8px;
+  padding: 8px 50px;
 }
 
 .icono-acciones a{

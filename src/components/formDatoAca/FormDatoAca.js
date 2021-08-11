@@ -36,10 +36,10 @@ const FormDatoAca = (props) => {
 							</div>  
 	                        <div className="col-sm-12 col-md-6">
 								<div className="row">									
-										<input type="text" placeholder="Programa:" className="form-control mt-3" name="programa" onChange={ handleInputChange} value={values.programa}></input>
-										<input type="text" placeholder="Institución:" className="form-control mt-3" name="institucion" onChange={ handleInputChange} value={values.institucion}></input>
-										<input type="date" placeholder="Fecha de graduación:" className="form-control mt-3" name="fecha" onChange={ handleInputChange} value={values.fecha}></input>
-										<textarea className="mt-3" name="intereses" placeholder="Otros intereses:" cols="50" rows="8" onChange={ handleInputChange} value={values.intereses}></textarea>							
+										<input type="text" placeholder="Programa:" className="form-control mt-3" name="programa" onChange={ handleInputChange} value={values.programa} required="required"></input>
+										<input type="text" placeholder="Institución:" className="form-control mt-3" name="institucion" onChange={ handleInputChange} value={values.institucion} required="required"></input>
+										<input type="date" placeholder="Fecha de graduación:" className="form-control mt-3" name="fecha" onChange={ handleInputChange} value={values.fecha} required="required"></input>
+										<textarea className="mt-3" name="intereses" placeholder="Otros intereses:" cols="50" rows="8" onChange={ handleInputChange} value={values.intereses} required="required"></textarea>							
 								</div>
 								<div className="row">
 						
@@ -47,7 +47,7 @@ const FormDatoAca = (props) => {
 										<button className="btncerrar"><FontAwesomeIcon icon={ faPowerOff } /> CERRAR</button>
 									</div>
 									<div className="col-sm-12 col-md-6 text-center mt-5"> 
-										<button className="btnguardar"><FontAwesomeIcon icon={  faSave } /> GUARDAR CAMBIOS</button>
+										<button className="btnguardar" type="submit"><FontAwesomeIcon icon={  faSave } /> GUARDAR CAMBIOS</button>
 									</div>
 								</div>
 

@@ -6,12 +6,13 @@ import Dashboard from './pages/dashboardp/Dashboardp';
 import Egresados from './pages/egresados/Egresados';
 import Hvegresados from './pages/hvegresados/Hvegresados';
 import FormEgre from './pages/formEgre/FormEgre';
-import FormDatoAca from './pages/formDatoAca/FormDatoAcademico';
 import Seguimiento from './pages/seguimiento/Seguimiento';
 import HVseguimiento from './pages/hvSeguimiento/HVseguimiento';
 import FormSegui from './pages/formSegui/FormSegui';
 import FormAcaSegui from './pages/formAcaSegui/FormAcaSegui';
 import FormDatoLaboral from './pages/formDatoLaboral/FormDatoLaboral';
+import FormularioEgresado from './components/formularioEgresado/FormularioEgresado';
+import FormularioSeguimiento from './components/formularioSeguimiento/FormularioSeguimiento';
 
 import {
   BrowserRouter as Router,
@@ -37,16 +38,13 @@ function App() {
             <Route exact path="/egresados">
               <Egresados />
             </Route>
-            <Route exact path="/hvegresados">
+            <Route exact path="/hvegresados/:id">
               <Hvegresados />
             </Route>
             <Route exact path="/formegresados">
               <FormEgre />
             </Route>
-            <Route exact path="/formulariodatosacademicos">
-              <FormDatoAca /> 
-            </Route>
-
+            
             <Route exact path="/seguimiento">
               <Seguimiento /> 
             </Route>
@@ -66,10 +64,8 @@ function App() {
             <Route exact path="/formdatoslaborales">
               <FormDatoLaboral /> 
             </Route>
-
-
-          </Switch>
-                          
+          </Switch> 
+          <FormularioSeguimiento />                       
           <Footer />
 
       </Router>
