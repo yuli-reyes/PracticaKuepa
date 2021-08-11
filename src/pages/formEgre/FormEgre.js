@@ -1,19 +1,41 @@
-import Formegre from '../../components/formegre/Formegre';
+import React,{useEffect, useState} from 'react';
 import Navegre from '../../components/navegre/Navegre';
 import Header from '../../components/header/Header';
-import NavFormEgre from '../../components/navFormEgre/NavFormEgre';
+import {db} from  '../../firebase';
+import FormularioEgresado from '../../components/formularioEgresado/FormularioEgresado';
+
+
+
 
 const FormEgre = () => {
-	const addTask = () => {
-		console.log('nueva tarea')
-	}
+	const [datos,setDatos] = useState([]);
+
+	const addOrEdit = async (datObject) =>{
+		await db.collection('datos').doc().set(datObject);
+		console.log('datos egresado');
+	};
+
+	const getDatos = async () => {
+		db.collection('datos').onSnapshot((querySnapshot)=>{
+			const basedatos =[];
+			querySnapshot.forEach((doc)=>{
+				basedatos.push({...doc.data(), id:doc.id});
+
+			});
+			setDatos(basedatos);
+		});
+	};
+
+	useEffect(() => {
+		getDatos();
+	},[]);
+
 	
 	return(
 		<div>
 		    <Header />
-	        <Navegre /> 
-	        <NavFormEgre />	         
-	        <Formegre addOrEdit={addTask}/>
+	        <Navegre />       
+	        <FormularioEgresado addOrEdit={addOrEdit}/>
 
 		</div>
 		);

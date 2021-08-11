@@ -3,13 +3,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import Swal from "sweetalert2";
+import {useParams} from 'react-router-dom';
+import {db} from  '../../firebase';
+import React, {useEffect,useState} from 'react';
+
 
 
 import {
   Link  
 } from "react-router-dom";
 
+
 function Seccionhvegre(){
+
+	const {id}=useParams()
+
+	const [dato,setDato] = useState({})
+
+  const getDatos = async () =>{
+
+  await db.collection ('datos').doc(id).get()
+  .then(response=>{
+  	console.log(response.data())
+  	setDato(response.data())
+
+  })
+ 
+  };
+  useEffect(()=>{
+  	getDatos()
+  },[])
+
+
 
 	const mostrarAccion=()=>{
 	Swal.fire({
@@ -32,6 +57,9 @@ function Seccionhvegre(){
 
   }
 
+  
+
+
 	return(
 
 		<div className="container-fluid seccionhv">
@@ -42,7 +70,7 @@ function Seccionhvegre(){
 							<img src="https://img.freepik.com/foto-gratis/joven-graduado-contra-pared-grunge-espacio-copia-alegre-gran-sonrisa_1187-16129.jpg?size=626&ext=jpg" width="200px"/>
 						</div>
 						<div className="nombre">
-							<h4>EDWIN ALEXANDER GUTIERREZ DIAZ</h4>
+							<h4>{dato.nombre}</h4>
 						</div>
 					</div>
 					<div className="fondoverde">
@@ -50,11 +78,11 @@ function Seccionhvegre(){
 							<h5>Datos del Egresado</h5>
 						</div>
 						<div>
-							<p>C.C 1032450436</p>
-							<p>Celular: 302 678 9850</p>
-							<p>Teléfono Fijo: 255 70 08</p>
-							<p>Dirección: Calle 75 #43-50</p>
-							<p>Correo: juanito@gmail.com</p>
+							<p>C.C {dato.documento }</p>
+							<p>Celular:{dato.celular}</p>
+							<p>Teléfono Fijo:{dato.telefono}</p>
+							<p>Dirección: {dato.direccion}</p>
+							<p>Correo: {dato.correo}</p>
 						</div>
 						<div className="text-center">
 							<Link to="/formegresados"><button className="btn-editar mt-3">EDITAR</button></Link>
@@ -76,17 +104,21 @@ function Seccionhvegre(){
 						  <tr className="tabla">
 						    <th>Fecha de Registro</th>
 						    <th>Programa</th>
+						    <th>Usuario Kuepa</th>
+						    <th>Código</th>
 						    <th>Institución</th>
-						    <th>Estado</th>
 						    <th>Fecha de Graduación</th>
+						    <th>Intereses</th>
 						    <th>Acciones</th>
 						  </tr>
 						  <tr>
-						    <td>21/07/2021</td>
-						    <td>Técnico Front-End</td>
-						    <td>Kuepa</td>
-						    <td>Graduado</td>
-						    <td>20 de Julio 2021</td>
+						    <td>{dato.fechaRegistro}</td>
+						    <td>{dato.programa}</td>
+						    <td>{dato.usuariokuepa}</td>
+						    <td>{dato.codigo}</td>
+						    <td>{dato.institucion}</td>						    
+						    <td>{dato.fechaGrado}</td>
+						    <td>{dato.intereses}</td>
 						    <td className="icono-acciones"><a><Link to="/formulariodatosacademicos"><FontAwesomeIcon icon={faPencilAlt} className="pencil" /></Link></a>						    
 						    <a onClick={()=>{mostrarAccion()}} role="button"><FontAwesomeIcon icon={faTrashAlt} className="trash"/></a></td>
 						  </tr>
