@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/PracticaKuepa/static/css/main.2355e988.chunk.css",
+    "main.js": "/PracticaKuepa/static/js/main.76e06204.chunk.js",
+    "main.js.map": "/PracticaKuepa/static/js/main.76e06204.chunk.js.map",
+    "runtime-main.js": "/PracticaKuepa/static/js/runtime-main.98213017.js",
+    "runtime-main.js.map": "/PracticaKuepa/static/js/runtime-main.98213017.js.map",
+    "static/js/2.64f55fba.chunk.js": "/PracticaKuepa/static/js/2.64f55fba.chunk.js",
+    "static/js/2.64f55fba.chunk.js.map": "/PracticaKuepa/static/js/2.64f55fba.chunk.js.map",
+    "index.html": "/PracticaKuepa/index.html",
+    "static/css/main.2355e988.chunk.css.map": "/PracticaKuepa/static/css/main.2355e988.chunk.css.map",
+    "static/js/2.64f55fba.chunk.js.LICENSE.txt": "/PracticaKuepa/static/js/2.64f55fba.chunk.js.LICENSE.txt",
+    "static/media/dashboard.css": "/PracticaKuepa/static/media/seguimiento.2e3bbc8d.jpg",
+    "static/media/filter-solid.ab91061e.svg": "/PracticaKuepa/static/media/filter-solid.ab91061e.svg",
+    "static/media/login.css": "/PracticaKuepa/static/media/fondobirretes.b2ba9310.jpg",
+    "static/media/graduate-student.d5c01f64.jpg": "/PracticaKuepa/static/media/graduate-student.d5c01f64.jpg",
+    "static/media/iconegresados.f99c86d9.svg": "/PracticaKuepa/static/media/iconegresados.f99c86d9.svg",
+    "static/media/iconseguimiento.e2a98dbf.svg": "/PracticaKuepa/static/media/iconseguimiento.e2a98dbf.svg",
+    "static/media/logokuepa.a0671d27.png": "/PracticaKuepa/static/media/logokuepa.a0671d27.png",
+    "static/media/logotitulando.66da0e4a.png": "/PracticaKuepa/static/media/logotitulando.66da0e4a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98213017.js",
+    "static/js/2.64f55fba.chunk.js",
+    "static/css/main.2355e988.chunk.css",
+    "static/js/main.76e06204.chunk.js"
+  ]
+}
