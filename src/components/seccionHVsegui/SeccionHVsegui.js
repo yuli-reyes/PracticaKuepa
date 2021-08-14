@@ -1,9 +1,7 @@
 import './seccionHVsegui.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import Swal from "sweetalert2";
-
+import {useParams} from 'react-router-dom';
+import {db} from  '../../firebase';
+import React, {useEffect,useState} from 'react';
 
 import {
   Link  
@@ -11,26 +9,23 @@ import {
 
 function SeccionHVsegui(){
 
-	const mostrarAccion=()=>{
-	Swal.fire({
-	  title: '¿Estás seguro de eliminar?',
-	  icon: 'warning',
-	  showCancelButton: true,
-	  confirmButtonColor: '#229185',
-	  cancelButtonColor: '#ff0000',
-	  cancelButtonText: 'Cancelar',
-	  confirmButtonText: 'Si, deseo eliminar'
-	}).then((result) => {
-	  if (result.isConfirmed) {
-	    Swal.fire(
-	      '¡Eliminado!',
-	      'La información ha sido eliminada.',
-	      'success'
-	    )
-	  }
-	})
+	
+	const {id}=useParams()
+	const [dato,setDato] = useState({})
 
-  }
+  const getDatos = async () =>{
+
+  await db.collection ('datos').doc(id).get()
+  .then(response=>{
+  	console.log(response.data())
+  	setDato(response.data())
+
+  })
+ 
+  };
+  useEffect(()=>{
+  	getDatos()
+  },[])
 
 	return(
 
@@ -42,7 +37,7 @@ function SeccionHVsegui(){
 							<img src="https://img.freepik.com/foto-gratis/joven-graduado-contra-pared-grunge-espacio-copia-alegre-gran-sonrisa_1187-16129.jpg?size=626&ext=jpg" width="200px"/>
 						</div>
 						<div className="nombre">
-							<h4>EDWIN ALEXANDER GUTIERREZ DIAZ</h4>
+							<h4>{dato.nombre}</h4>
 						</div>
 					</div>
 					<div className="fondoverde">
@@ -50,11 +45,11 @@ function SeccionHVsegui(){
 							<h5>Datos del Egresado</h5>
 						</div>
 						<div>
-							<p>C.C 1032450436</p>
-							<p>Celular: 302 678 9850</p>
-							<p>Teléfono Fijo: 255 70 08</p>
-							<p>Dirección: Calle 75 #43-50</p>
-							<p>Correo: juanito@gmail.com</p>
+							<p><strong>C.C </strong>{dato.documento}</p>
+							<p><strong>Celular: </strong>{dato.celular}</p>
+							<p><strong>Teléfono Fijo: </strong>{dato.telefono}</p>
+							<p><strong>Dirección: </strong>{dato.direccion}</p>
+							<p><strong>Correo: </strong>{dato.correo}</p>
 						</div>
 						<div className="text-center">
 							<Link to="/dashboard"><button className="btn-editar mt-3">ACTUALIZAR DATOS EGRESADO</button></Link>
@@ -79,16 +74,13 @@ function SeccionHVsegui(){
 						    <th>Institución</th>
 						    <th>Estado</th>
 						    <th>Fecha de Graduación</th>
-						    <th>Acciones</th>
 						  </tr>
 						  <tr>
-						    <td>21/07/2021</td>
-						    <td>Técnico Front-End</td>
-						    <td>Kuepa</td>
+						    <td>{dato.fechaRegistro}</td>
+						    <td>{dato.programa}</td>
+						    <td>{dato.institucion}</td>
 						    <td>Graduado</td>
-						    <td>20 de Julio 2021</td>
-						    <td className="icono-acciones"><a><Link to="/formulariodatosacademicos"><FontAwesomeIcon icon={faPencilAlt} className="pencil" /></Link></a>						    
-						    <a onClick={()=>{mostrarAccion()}} role="button"><FontAwesomeIcon icon={faTrashAlt} className="trash"/></a></td>
+						    <td>20 de Julio 2021</td>				
 						  </tr>
 						</table>
 					</div>
@@ -105,7 +97,6 @@ function SeccionHVsegui(){
 						    <th>Tipo de Contrato</th>
 						    <th>Salario</th>
 						    <th>Cargo</th>
-						    <th>Acciones</th>
 						  </tr>
 						  <tr>
 						    <td>21/07/2021</td>
@@ -115,8 +106,6 @@ function SeccionHVsegui(){
 						    <td>Término Indefinido</td>
 						    <td>3 Salarios mínimos</td>
 						    <td>Front-End Junior</td>
-						    <td className="icono-acciones"><a><Link to="/formulariodatosacademicos"><FontAwesomeIcon icon={faPencilAlt} className="pencil" /></Link></a>						    
-						    <a onClick={()=>{mostrarAccion()}} role="button"><FontAwesomeIcon icon={faTrashAlt} className="trash"/></a></td>
 						  </tr>
 						</table>
 					</div>

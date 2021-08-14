@@ -14,9 +14,9 @@
 	font-size: 20px;
 	background-color: rgba(248, 100, 51, 0.7);
 	max-height: 400px;
+	height: 100%;
 	color: #ffffff;
 	font-weight: bold;
-	letter-spacing: 1px;
 }
 
 .cajaazul p{
@@ -25,21 +25,23 @@
 	font-size: 20px;
 	background-color: rgba(48, 162, 150, 0.7);
 	max-height: 400px;
+	height: 100%;
 	color: #ffffff;
 	font-weight: bold;
-	letter-spacing: 1px;
 }
 
 .seccion1{
 	background-image:url(./egresados.jpg);
 	background-size: cover;
 	max-height: 400px;
+	height: 100%;
 }
 
 .seccion2{
 	background-image:url(./seguimiento.jpg);
 	background-size: cover;	
 	max-height: 400px;
+	height: 100%;
 }
 
 .btn-egresado{
