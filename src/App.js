@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import Login from './pages/login/Login';
 import Footer from './components/footer/Footer';
 import Dashboard from './pages/dashboardp/Dashboardp';
@@ -8,11 +7,7 @@ import Hvegresados from './pages/hvegresados/Hvegresados';
 import FormEgre from './pages/formEgre/FormEgre';
 import Seguimiento from './pages/seguimiento/Seguimiento';
 import HVseguimiento from './pages/hvSeguimiento/HVseguimiento';
-import FormSegui from './pages/formSegui/FormSegui';
-import FormAcaSegui from './pages/formAcaSegui/FormAcaSegui';
-import FormDatoLaboral from './pages/formDatoLaboral/FormDatoLaboral';
-import FormularioEgresado from './components/formularioEgresado/FormularioEgresado';
-import FormularioSeguimiento from './components/formularioSeguimiento/FormularioSeguimiento';
+import FormularioSeguimiento from './pages/formSegui/FormSegui';
 
 import {
   BrowserRouter as Router,
@@ -44,28 +39,24 @@ function App() {
             <Route exact path="/formegresados">
               <FormEgre />
             </Route>
+
+            <Route exact path="/actualizacionformegresados/:id">
+              <FormEgre />
+            </Route>
             
             <Route exact path="/seguimiento">
               <Seguimiento /> 
             </Route>
 
-            <Route exact path="/hvseguimiento">
+            <Route exact path="/hvseguimiento/:id">
               <HVseguimiento /> 
             </Route>
 
              <Route exact path="/formseguimiento">
-              <FormSegui /> 
-            </Route>
-
-            <Route exact path="/formacaseguimiento">
-              <FormAcaSegui /> 
-            </Route>
-
-            <Route exact path="/formdatoslaborales">
-              <FormDatoLaboral /> 
+              <FormularioSeguimiento /> 
             </Route>
           </Switch> 
-          <FormularioSeguimiento />                       
+                    
           <Footer />
 
       </Router>

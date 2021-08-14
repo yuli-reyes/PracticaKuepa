@@ -6,7 +6,7 @@ function Footer(){
 
     <div>    
       <footer>
-        <p>&copy; Sitio desarrollado por  Kuepa EduTech | Todos los derechos reservados.</p>
+        <p className="mt-2">&copy; Sitio desarrollado por  Kuepa EduTech | Todos los derechos reservados.</p>
       </footer>
     </div> 
     );
