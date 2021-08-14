@@ -11,48 +11,47 @@ import {
 } from "react-router-dom";
 
 
-function Cardegre() {
+const Cardegre=(props)=> {
 
- const [datos,setEgresados] = useState([])
-
- const getDatos = async () =>{
-     db.collection ('datos').onSnapshot((querySnapshot)=>{
-       const docs = [];
-      querySnapshot.forEach ((doc) =>{
-        docs.push({...doc.data(), id:doc.id});
-        });
-        setEgresados(docs);
-      });
-  };
-
- const onDeleteLink = id =>{
-
- 		Swal.fire({
-	  title: '¿Estás seguro de eliminar?',
-	  icon: 'warning',
-	  showCancelButton: true,
-	  confirmButtonColor: '#229185',
-	  cancelButtonColor: '#ff0000',
-	  cancelButtonText: 'Cancelar',
-	  confirmButtonText: 'Si, deseo eliminar'
-	}).then((result) => {
-	  if (result.isConfirmed) {
-	  	db.collection('datos').doc(id).delete();
-	    Swal.fire(
-	      '¡Eliminado!',
-	      'La información ha sido eliminada.',
-	      'success'
-	    )
-	  }
-	})
-        
-  }
+	const [datos, setEgresados] = useState([])
+	const [currentId, setCurrentId] = useState('');
 	
 
-useEffect(()=>{
+	const getDatos = async () =>{
+		db.collection ('datos').onSnapshot((querySnapshot)=>{
+		const docs = [];
+		querySnapshot.forEach ((doc) =>{
+			docs.push({...doc.data(), id:doc.id});
+			});
+			setEgresados(docs);
+		});
+	};
 
+	const onDeleteLink = id =>{
+
+		Swal.fire({
+		title: '¿Estás seguro de eliminar?',
+		icon: 'warning',
+		showCancelButton: true,
+		confirmButtonColor: '#229185',
+		cancelButtonColor: '#ff0000',
+		cancelButtonText: 'Cancelar',
+		confirmButtonText: 'Si, deseo eliminar'
+		}).then((result) => {
+		if (result.isConfirmed) {
+			db.collection('datos').doc(id).delete();
+			Swal.fire(
+			'¡Eliminado!',
+			'La información ha sido eliminada.',
+			'success'
+			)
+		}
+		})
+			
+	}	
+		
+useEffect(()=>{
 	getDatos();
-	console.log(datos)
 
 },[]) 
 
@@ -79,20 +78,21 @@ useEffect(()=>{
 							    </div>
 							    <div className="col-md-6">
 							            <div className="card-body">
-										        <p>CC:{egresado.documento}</p>
-										        <p>Celular:{egresado.celular}</p>
-										        <p>Programa:{egresado.programa}</p>								        			        
+										        <p>CC: {egresado.documento}</p>
+										        <p>Cel: {egresado.celular}</p>
+										        <p>Programa:<br></br>{egresado.programa}</p>								        			        
 								  				</div>
 								  </div>
 						  </div>
 						<div className="row">
 							<div className="col-sm-12 col-md-12 text-center">
-							<Link to={`/hvegresados/${egresado.id}`}><button className="btn-ver">VER MAS</button></Link>
+							<Link to={`/hvegresados/${egresado.id}`}><button className="btn-ver">VER MÁS</button></Link>
 							</div>
 						</div>
 				      	<div className="row mt-3">
 					  		<div className="col-sm-12 col-md-6 text-center">
-					  			<Link to="/formegresados"><button className="btn-edit">EDITAR</button></Link>
+					  			<button className="btn-edit" 
+								  onClick={() => setCurrentId(egresado.id)}>EDITAR</button>
 					      	</div>
 					      	<div className="col-sm-12 col-md-6 text-center">
 					      		<button className="btn-eliminar" onClick={()=>{onDeleteLink(egresado.id)}}>ELIMINAR</button>

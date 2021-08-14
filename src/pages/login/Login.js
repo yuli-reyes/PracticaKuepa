@@ -18,12 +18,14 @@ function Login(){
     Swal.fire({
       title: 'Bienvenido',
       text: 'Has iniciado sesión con éxito.',
-      imageUrl: 'https://i2.wp.com/kuepa.blog/wp-content/uploads/2017/07/cropped-perfil-01.png?fit=755%2C253&ssl=1',
-      imageWidth: 300,
-      imageHeight: 100,
+      imageUrl: 'https://icyjellyshot.000webhostapp.com/otrasimagenes/logotitulandopeque%C3%B1a.png',
+      timer: 10000,
+      imageWidth: 400,
+      imageHeight: 99,
       confirmButtonText: 'Aceptar',
-      confirmButtonColor: '#30A296'
-})
+      confirmButtonColor: '#30A296'         
+      
+    })
   }
 
   const mostrarError=()=>{

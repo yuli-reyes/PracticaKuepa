@@ -18,8 +18,11 @@ function Header(){
 				   	<div className="logokuepa col-sm-12 col-md-9 col-lg-9">
 		        		<img src={logokuepa} width="130px" />
 		        	</div>
-		        	<div className="col-sm-12 col-md-1 col-lg-1 iconcircle">
+		        	<div className="col-sm-12 col-md-1 col-lg-1 iconcircle text-center">
 		        		<FontAwesomeIcon icon={faUserCircle} />
+						<h6>Viviana García</h6>
+					
+						
 		        	</div>
 
 		        	<div className="col-sm-12 col-md-2 col-lg-2 iconexit">	
