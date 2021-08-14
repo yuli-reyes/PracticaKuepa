@@ -1,14 +1,7 @@
 import './seccionhvegre.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import Swal from "sweetalert2";
 import {useParams} from 'react-router-dom';
 import {db} from  '../../firebase';
 import React, {useEffect,useState} from 'react';
-
-
-
 import {
   Link  
 } from "react-router-dom";
@@ -34,32 +27,6 @@ function Seccionhvegre(){
   	getDatos()
   },[])
 
-
-
-	const mostrarAccion=()=>{
-	Swal.fire({
-	  title: '¿Estás seguro de eliminar?',
-	  icon: 'warning',
-	  showCancelButton: true,
-	  confirmButtonColor: '#229185',
-	  cancelButtonColor: '#ff0000',
-	  cancelButtonText: 'Cancelar',
-	  confirmButtonText: 'Si, deseo eliminar'
-	}).then((result) => {
-	  if (result.isConfirmed) {
-	    Swal.fire(
-	      '¡Eliminado!',
-	      'La información ha sido eliminada.',
-	      'success'
-	    )
-	  }
-	})
-
-  }
-
-  
-
-
 	return(
 
 		<div className="container-fluid seccionhv">
@@ -78,11 +45,11 @@ function Seccionhvegre(){
 							<h5>Datos del Egresado</h5>
 						</div>
 						<div>
-							<p>C.C {dato.documento }</p>
-							<p>Celular:{dato.celular}</p>
-							<p>Teléfono Fijo:{dato.telefono}</p>
-							<p>Dirección: {dato.direccion}</p>
-							<p>Correo: {dato.correo}</p>
+							<p><strong>C.C </strong>{dato.documento}</p>
+							<p><strong>Celular: </strong>{dato.celular}</p>
+							<p><strong>Teléfono Fijo: </strong>{dato.telefono}</p>
+							<p><strong>Dirección: </strong>{dato.direccion}</p>
+							<p><strong>Correo: </strong>{dato.correo}</p>
 						</div>
 						<div className="text-center">
 							<Link to="/formegresados"><button className="btn-editar mt-3">EDITAR</button></Link>
@@ -109,7 +76,6 @@ function Seccionhvegre(){
 						    <th>Institución</th>
 						    <th>Fecha de Graduación</th>
 						    <th>Intereses</th>
-						    <th>Acciones</th>
 						  </tr>
 						  <tr>
 						    <td>{dato.fechaRegistro}</td>
@@ -118,9 +84,7 @@ function Seccionhvegre(){
 						    <td>{dato.codigo}</td>
 						    <td>{dato.institucion}</td>						    
 						    <td>{dato.fechaGrado}</td>
-						    <td>{dato.intereses}</td>
-						    <td className="icono-acciones"><a><Link to="/formulariodatosacademicos"><FontAwesomeIcon icon={faPencilAlt} className="pencil" /></Link></a>						    
-						    <a onClick={()=>{mostrarAccion()}} role="button"><FontAwesomeIcon icon={faTrashAlt} className="trash"/></a></td>
+						    <td>{dato.intereses}</td>						    
 						  </tr>
 						</table>
 					</div>
