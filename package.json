@@ -1,6 +1,5 @@
-{
-  "homepage": "https://yuli-reyes.github.io/PracticaKuepa", 
-  "name": "interfazkuepa",
+{ 
+  "name": "PracticaKuepa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +23,7 @@
     "sweetalert2": "^11.0.20",
     "web-vitals": "^1.1.2"
   },
+  "homepage": "https://yuli-reyes.github.io/PracticaKuepa",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build ",
