@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PracticaKuepa/static/css/main.2355e988.chunk.css",
-    "main.js": "/PracticaKuepa/static/js/main.76e06204.chunk.js",
-    "main.js.map": "/PracticaKuepa/static/js/main.76e06204.chunk.js.map",
+    "main.js": "/PracticaKuepa/static/js/main.0ab025e0.chunk.js",
+    "main.js.map": "/PracticaKuepa/static/js/main.0ab025e0.chunk.js.map",
     "runtime-main.js": "/PracticaKuepa/static/js/runtime-main.98213017.js",
     "runtime-main.js.map": "/PracticaKuepa/static/js/runtime-main.98213017.js.map",
     "static/js/2.64f55fba.chunk.js": "/PracticaKuepa/static/js/2.64f55fba.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.98213017.js",
     "static/js/2.64f55fba.chunk.js",
     "static/css/main.2355e988.chunk.css",
-    "static/js/main.76e06204.chunk.js"
+    "static/js/main.0ab025e0.chunk.js"
   ]
 }
