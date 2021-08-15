@@ -17,9 +17,9 @@ Una es para el registro de nuevos estudiantes, y la otra, es para el seguimiento
 
 # ¿Quienes elaboraron el proyecto?🔧
 
-* **Andrés Villanueva**
-**Estudiantes de Kuepa EduTech:**
-**Yuli Viviana Reyes Muñoz:**
-* **Diana Viviana García Fonseca* **
+* **Andrés Villanueva** 
+* **Estudiantes de Kuepa EduTech:**
+* **Yuli Viviana Reyes Muñoz**
+* **Diana Viviana García Fonseca**
 
 
