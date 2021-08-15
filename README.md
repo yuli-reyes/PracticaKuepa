@@ -15,7 +15,7 @@ Nuestra interfaz se compone de un login que nos direcciona hacia un Dashboard qu
 Una es para el registro de nuevos estudiantes, y la otra, es para el seguimiento de los mismos. Esto a través de botones distribuidos de manera coherente para su fácil navegabilidad.
 
 
-¿Quienes elaboraron el proyecto?
+# ¿Quienes elaboraron el proyecto?🔧
 
 Estudiantes de Kuepa EduTech:
 Yuli Viviana Reyes Muñoz
