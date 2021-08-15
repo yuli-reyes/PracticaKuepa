@@ -19,7 +19,7 @@ Una es para el registro de nuevos estudiantes, y la otra, es para el seguimiento
 
 * **Andrés Villanueva**
 **Estudiantes de Kuepa EduTech:**
-**Yuli Viviana Reyes Muñoz**
+**Yuli Viviana Reyes Muñoz:**
 * **Diana Viviana García Fonseca* **
 
 
