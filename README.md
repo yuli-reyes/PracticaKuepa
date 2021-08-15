@@ -1,11 +1,11 @@
 # PracticaKuepa
 Este es un proyecto para el desarrollo en React de interfaz de Kuepa.
 
-¿Qué hace nuestro Aplicativo Titulando? 🚀
+# ¿Qué hace nuestro Aplicativo Titulando? 🚀
 
 Cubre la necesidad de mantener un registro y seguimiento de los egresados de la institución Kuepa EduTech. Como su nombre lo indica se creó con la finalidad de dar a entender que el egresado no solamente recibe un título sino que a su vez se sigue cada paso que dá en cuanto a su formación académica y aplicación en el ámbito laboral.
 
-¿Cómo se realizó este proyecto?
+# ¿Cómo se realizó este proyecto?📋
 
 Se maquetó en React JS, se instalaron las librerias de Fontawesomeicon, Bootstrap 5, Sweetalert2 y Firebase, se hizo la importacion de la fuente Montserrat desde Google Fonts. Se implementaron los hooks que manejan los estados en React JS, y firebase se utilizó para permitirnos almacenar datos en la nube de un servidor de Google. Usamos Bootstrap para manejar los estilos y validación de los formularios, la grid para manejar el responsive.
 
