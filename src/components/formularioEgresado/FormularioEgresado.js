@@ -3,8 +3,6 @@ import estudiante from '../cardegresados/graduate-student.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSave } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
-import storage from '../../firebase';
-
 
 
 const FormularioEgresado = (props) =>{
@@ -39,21 +37,10 @@ const FormularioEgresado = (props) =>{
  		setValues({...inicialStateValues})
 		
 	};
-	useEffect(() => {
-
-		console.log(props.currentId)
-		if (props.currentId === ''){
-			setValues({...inicialStateValues});
-		}else{
-			console.log('editando')
-			
-		}
-	},[props.currentId]);
 
 		
 	// Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
-	'use strict'
   
 	// Fetch all the forms we want to apply custom Bootstrap validation styles to
 	var forms = document.querySelectorAll('.needs-validation')
@@ -72,7 +59,6 @@ const FormularioEgresado = (props) =>{
 	  })
   })()
 
-
 	return(
 
 	<div className="container-fluid ">
@@ -83,7 +69,7 @@ const FormularioEgresado = (props) =>{
 
 			<div className="row cajaformulario">				
 				<div className="col-sm-12 col-md-3 text-center ">
-				<img src={estudiante} width="250px" className="imgestudent img-fluid"/>
+				<img src={estudiante} width="250px" className="imgestudent img-fluid" alt="fotoestudiante"/>
 					 <div>
 						<label className="mt-3">CARGAR FOTO</label>
 						<input type="file" className="form-control" name="foto" required />	
@@ -114,7 +100,7 @@ const FormularioEgresado = (props) =>{
 								<div className="invalid-feedback">Este correo no es válido</div>
 							</div>
 							<div className="col-sm-12 col-md-4" >
-							 	<input type="tel" className="form-control mt-3"  name="telefono" onChange={ handleInputChange} value={values.telefono} placeholder="Teléfono fijo:" pattern="[^0-9]+${3,20}" required="required" />				
+							 	<input type="tel" className="form-control mt-3"  name="telefono" onChange={ handleInputChange} value={values.telefono} placeholder="Teléfono fijo:" pattern="[0-9]{3,20}" required="required" />				
 								 <div className="valid-feedback">El campo está correcto</div>
 								<div className="invalid-feedback">Este número de teléfono no es válido</div>
 							</div>
