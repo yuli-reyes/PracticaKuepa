@@ -1,9 +1,4 @@
 import './buscador.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilter } from '@fortawesome/free-solid-svg-icons';
-import ReactDOM from 'react-dom';
-import Select from 'react-select';
-import filtro from './filter-solid.svg';
 import { db } from '../../firebase';
 
 
@@ -23,7 +18,7 @@ import { db } from '../../firebase';
 				
 				<div  className="buscar col-sm-12 col-md-12 col-lg-12">
 					<div className="input-group">
-						<input type="text" className="form-control" onChange={handleChange} placeholder="Documento" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+						<input type="text" className="form-control" onChange={handleChange} placeholder="Documento" aria-label="Recipient's username" />
 						<div className="input-group-append">
 							<button className="btn-buscar" type="button">BUSCAR</button>
 						</div>

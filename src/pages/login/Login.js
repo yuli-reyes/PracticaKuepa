@@ -6,12 +6,6 @@ import { faUserGraduate,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons';
 import Botonlogin from '../../components/botonlogin/Botonlogin';
 import Swal from "sweetalert2";
 
-
-import {
-  Link  
-} from "react-router-dom";
-
-
 function Login(){
 
   const mostrarBienvenida=()=>{
@@ -59,10 +53,10 @@ const handleSubmit=(e)=>{
     <div className="fondo">      
       <div className="container-fluid body">
         <div className="logokuepa">
-          <img src={logokuepa} width="130px" />                    
+          <img src={logokuepa} width="130px" alt="logokuepa"/>                    
         </div>
           <div className="logotitulando">
-            <img src={logotitulando} width="250px"/>
+            <img src={logotitulando} width="250px" alt="logotitulando"/>
           </div>
             <div className="row">
               <div className="col-sm-12 col-md-12">

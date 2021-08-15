@@ -34,7 +34,7 @@ function SeccionHVsegui(){
 				<div className="cajaperfil col-12 col-md-4 col-lg-4">
 					<div className="fondooscuro text-center">
 						<div className="fotoegre">
-							<img src="https://img.freepik.com/foto-gratis/joven-graduado-contra-pared-grunge-espacio-copia-alegre-gran-sonrisa_1187-16129.jpg?size=626&ext=jpg" width="200px"/>
+							<img src="https://img.freepik.com/foto-gratis/joven-graduado-contra-pared-grunge-espacio-copia-alegre-gran-sonrisa_1187-16129.jpg?size=626&ext=jpg" width="200px" alt="jovengraduado"/>
 						</div>
 						<div className="nombre">
 							<h4>{dato.nombre}</h4>

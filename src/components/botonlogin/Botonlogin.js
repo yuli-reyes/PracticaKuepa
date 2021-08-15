@@ -1,6 +1,4 @@
 import './botonlogin.css';
-import logotitulando from '../../img/logotitulando.png';
-
 
 function Botonlogin(){
 	

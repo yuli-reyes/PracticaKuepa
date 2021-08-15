@@ -1,6 +1,4 @@
 import './cardSeguimiento.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import estudiante from './graduate-student.jpg';
 import Swal from "sweetalert2";
 import {
@@ -14,8 +12,7 @@ function Cardsegui() {
 
 
 	const [datos, setEgresados] = useState([])
-	const [currentId, setCurrentId] = useState('');
-	
+
 
 	const getDatos = async () =>{
 		db.collection ('datos').onSnapshot((querySnapshot)=>{
@@ -74,7 +71,7 @@ useEffect(()=>{
 						</div>
 					  	<div className="row g-0">
 							    <div className="col-md-6 text-center cajafoto">
-							      <img src={ estudiante } className="foto" width="180px"/>
+							      <img src={ estudiante } className="foto" width="180px" alt="fotoestudiante"/>
 							    </div>
 							    <div className="col-md-6">
 							            <div className="card-body">
