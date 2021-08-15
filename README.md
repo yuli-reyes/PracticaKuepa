@@ -1,7 +1,7 @@
 # PracticaKuepa
 Este es un proyecto para el desarrollo en React de interfaz de Kuepa.
 
-¿Qué hace nuestro Aplicativo Titulando?
+¿Qué hace nuestro Aplicativo Titulando? 🚀
 
 Cubre la necesidad de mantener un registro y seguimiento de los egresados de la institución Kuepa EduTech. Como su nombre lo indica se creó con la finalidad de dar a entender que el egresado no solamente recibe un título sino que a su vez se sigue cada paso que dá en cuanto a su formación académica y aplicación en el ámbito laboral.
 
@@ -15,7 +15,7 @@ Nuestra interfaz se compone de un login que nos direcciona hacia un Dashboard qu
 Una es para el registro de nuevos estudiantes, y la otra, es para el seguimiento de los mismos. Esto a través de botones distribuidos de manera coherente para su fácil navegabilidad.
 
 
-¿Quienes elaboraroel proyecto?
+¿Quienes elaboraron el proyecto?
 
 Estudiantes de Kuepa EduTech:
 Yuli Viviana Reyes Muñoz
