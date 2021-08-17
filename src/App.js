@@ -11,6 +11,7 @@ import FormularioSeguimiento from './pages/formSegui/FormSegui';
 
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,  
 } from "react-router-dom";
@@ -19,7 +20,9 @@ function App() {
   return (
     <div>
       
-      <Router basename={process.env.PUBLIC_URL}>
+      {/*<Router basename={process.env.PUBLIC_URL}>*/}
+      
+      <HashRouter basename = '/'>
           <Switch>
 
             <Route exact path="/">
@@ -58,8 +61,8 @@ function App() {
           </Switch> 
                     
           <Footer />
-
-      </Router>
+          </HashRouter>
+      {/*</Router>*/}
     </div>
   );
 }
