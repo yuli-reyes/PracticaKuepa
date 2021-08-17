@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGraduate,faUnlockAlt  } from '@fortawesome/free-solid-svg-icons';
 import Botonlogin from '../../components/botonlogin/Botonlogin';
 import Swal from "sweetalert2";
+import { useHistory } from "react-router-dom";
 
 function Login(){
 
@@ -12,12 +13,11 @@ function Login(){
     Swal.fire({
       title: 'Bienvenido',
       text: 'Has iniciado sesión con éxito.',
-      imageUrl: 'https://icyjellyshot.000webhostapp.com/otrasimagenes/logotitulandopeque%C3%B1a.png',
+      imageUrl: 'https://estudiarenlinea.net/wp-content/uploads/2019/01/kuepa.jpg',
       timer: 10000,
       imageWidth: 400,
-      imageHeight: 99,
       confirmButtonText: 'Aceptar',
-      confirmButtonColor: '#30A296'         
+      confirmButtonColor: '#30A296'        
       
     })
   }
@@ -32,6 +32,7 @@ function Login(){
 })
   }
 
+let history = useHistory();
 const handleSubmit=(e)=>{
     let usuario="yulidiana"
     let contrasena="123abc"    
@@ -41,7 +42,9 @@ const handleSubmit=(e)=>{
 
     if (usuario===user && contrasena===password) {
         mostrarBienvenida()
-        window.location.replace("/dashboard")
+        //window.location.replace("/dashboard")
+        // this.props.history.push('/dashboard');
+        history.push("/dashboard");
     }
     else{
       mostrarError()      
